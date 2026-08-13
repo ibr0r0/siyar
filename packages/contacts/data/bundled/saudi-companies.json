@@ -1,0 +1,3306 @@
+{
+  "id": "saudi-companies",
+  "title": {
+    "ar": "شركات سعودية — قائمة مجمّعة",
+    "en": "Saudi companies — compiled list"
+  },
+  "provenance": {
+    "ar": "مستخرجة من ملفَّي PDF قدّمهما مالك المشروع: دليل شركات سعودية مصدَّر من Excel، وقائمة عناوين شركات. ليست مصدرًا رسميًا، ولم تُتحقَّق أي جهة منها فرديًا، ومعظم عناوينها عامة لا مخصصة للتوظيف.",
+    "en": "Extracted from two PDFs supplied by the project owner: a Saudi company directory exported from Excel, and a list of company addresses. Not an official source, no entry was individually verified, and most addresses are general contacts rather than recruitment mailboxes."
+  },
+  "verified": false,
+  "approximateVintage": "unknown; phone formats and several defunct ISP domains suggest a substantial part predates 2013",
+  "entries": [
+    {
+      "email": "aa_waseem@yahoo.com",
+      "org": "yahoo.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "aah1954@hotmail.com",
+      "org": "hotmail.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "aahaah@khaleej.net.bh",
+      "org": "Lucky Baby Company",
+      "sector": "Consumer Goods",
+      "city": "Riyadh"
+    },
+    {
+      "email": "aahaah1@khaleej.net.bh",
+      "org": "Paper Products Company",
+      "sector": "Consumer Goods",
+      "city": "Riyadh"
+    },
+    {
+      "email": "aahi@sps.net.sa",
+      "org": "Abdallah Al Faris and Company for Heavy Indus",
+      "sector": "Industrial Manufacturing",
+      "city": "Dammam",
+      "flags": [
+        "legacy-domain"
+      ]
+    },
+    {
+      "email": "aascoltd@deltasa.com",
+      "org": "Arabian Agricultural Systems Company",
+      "sector": "Agriculture and Food",
+      "city": "Riyadh"
+    },
+    {
+      "email": "aasfoor@kwsal.com",
+      "org": "kwsal.com"
+    },
+    {
+      "email": "aazmi@rtcc.com.sa",
+      "org": "rtcc.com.sa"
+    },
+    {
+      "email": "abbasm@anet.sa",
+      "org": "anet.sa"
+    },
+    {
+      "email": "abdulhadi@altoukhi.co",
+      "org": "altoukhi.co"
+    },
+    {
+      "email": "abha@interconti.com",
+      "org": "InterContinental Abha",
+      "sector": "Travel and Tourism",
+      "city": "Jeddah"
+    },
+    {
+      "email": "abssa@awalnet.net.sa",
+      "org": "awalnet.net.sa",
+      "flags": [
+        "legacy-domain"
+      ]
+    },
+    {
+      "email": "abzyfood@abbar-zainyfood.com",
+      "org": "Abdullah Abbar and Ahmed Zainy",
+      "sector": "Conglomerates",
+      "city": "Jeddah"
+    },
+    {
+      "email": "acbi-career@cbi.com",
+      "org": "cbi.com"
+    },
+    {
+      "email": "adahi@isdb.org.sa",
+      "org": "isdb.org.sa"
+    },
+    {
+      "email": "admin@alkhodari.com",
+      "org": "alkhodari.com"
+    },
+    {
+      "email": "admin@globemedsaudi.co",
+      "org": "globemedsaudi.co"
+    },
+    {
+      "email": "admin@gulfunion-saudi.com",
+      "org": "Gulf Union Insurance and Risk Management Co",
+      "sector": "Financial Services",
+      "city": "Dammam"
+    },
+    {
+      "email": "admin@sakentz.com",
+      "org": "Saudi Arabian Kent Company",
+      "sector": "Construction",
+      "city": "Al Khobar"
+    },
+    {
+      "email": "admin@saudifal.com.sa",
+      "org": "saudifal.com.sa"
+    },
+    {
+      "email": "admin@umc.com.sa",
+      "org": "umc.com.sa"
+    },
+    {
+      "email": "afecest@yahoo.com",
+      "org": "yahoo.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "agap-arabia@nesma.net.sa",
+      "org": "AGAP Arabia (merged)",
+      "sector": "Construction",
+      "city": "Al Khobar",
+      "flags": [
+        "legacy-domain"
+      ]
+    },
+    {
+      "email": "ags@algosaibi.com.sa",
+      "org": "Al Gosaibi Services Company",
+      "sector": "Services",
+      "city": "Dammam"
+    },
+    {
+      "email": "aharamco@hugayet.com.sa",
+      "org": "Al Hugayet Trading and Contracting Establishme",
+      "sector": "Oil and Gas",
+      "city": "Dammam"
+    },
+    {
+      "email": "ahc@alhejailan-consultants.com",
+      "org": "alhejailan-consultants.com"
+    },
+    {
+      "email": "ahmed@nie.com.sa",
+      "org": "nie.com.sa"
+    },
+    {
+      "email": "akam@arabia.com",
+      "org": "arabia.com"
+    },
+    {
+      "email": "akelco@akel.com.sa",
+      "org": "akel.com.sa"
+    },
+    {
+      "email": "al3jmi@gmail.com",
+      "org": "gmail.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "alabbadiyah@hotmail.com",
+      "org": "Al Abbad Trading and Contracting Company",
+      "sector": "Conglomerates",
+      "city": "Riyadh",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "alahsa@interconti.com",
+      "org": "InterContinental Al Ahsa",
+      "sector": "Travel and Tourism",
+      "city": "Abha"
+    },
+    {
+      "email": "alajmico@saudionline.com.sa",
+      "org": "saudionline.com.sa",
+      "flags": [
+        "legacy-domain"
+      ]
+    },
+    {
+      "email": "alaoun@mail.com",
+      "org": "Al Aoun Corporation",
+      "sector": "Services",
+      "city": "Jeddah"
+    },
+    {
+      "email": "alazizia@sol.net.sa",
+      "org": "Al Aziziah Agricultural Products Company",
+      "sector": "Agriculture and Food",
+      "city": "Riyadh",
+      "flags": [
+        "legacy-domain"
+      ]
+    },
+    {
+      "email": "albabtaingroup@albabtain.com",
+      "org": "Abdullatif Saud Al Babtain and Brothers",
+      "sector": "s Conglomerates",
+      "city": "Al Khobar"
+    },
+    {
+      "email": "alewan@alewan.med.sa",
+      "org": "Al Ewan Medical Company",
+      "sector": "Healthcare",
+      "city": "Riyadh"
+    },
+    {
+      "email": "alfanhosp@yahoo.com",
+      "org": "Al Fanateer Hospital",
+      "sector": "Healthcare",
+      "city": "Jubail",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "alguthmi@anet.net.sa",
+      "org": "Mohamad Obaid Al Gothmi Sons Company",
+      "sector": "Consumer Goods",
+      "city": "Jeddah"
+    },
+    {
+      "email": "alhanoo@anet.net.sa",
+      "org": "Al Hanoo Contracting Establishment",
+      "sector": "Construction",
+      "city": "Riyadh"
+    },
+    {
+      "email": "ali@baasem.com",
+      "org": "baasem.com"
+    },
+    {
+      "email": "aljubail@interconti.com",
+      "org": "InterContinental Al Jubail",
+      "sector": "Travel and Tourism",
+      "city": "Al Ahsa"
+    },
+    {
+      "email": "almaddah@sahara.com.sa",
+      "org": "Al Maddah Corporation",
+      "sector": "Conglomerates",
+      "city": "Jeddah"
+    },
+    {
+      "email": "almady@sabic.com",
+      "org": "sabic.com"
+    },
+    {
+      "email": "almanabe@msn.com",
+      "org": "Saudi Health Services Company",
+      "sector": "Healthcare",
+      "city": "Jeddah",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "alrashidf@rsal.com",
+      "org": "rsal.com"
+    },
+    {
+      "email": "alruwaite@yahoo.com",
+      "org": "Al Ruwaite Contracting Company",
+      "sector": "Construction",
+      "city": "Riyadh",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "alsaidaest@zajil.net",
+      "org": "zajil.net"
+    },
+    {
+      "email": "alsalam@holidayinn-sa.com",
+      "org": "Holiday Inn Jeddah Al Salam",
+      "sector": "Travel and Tourism",
+      "city": "Riyadh"
+    },
+    {
+      "email": "alsamiya@awalnet.net.sa",
+      "org": "Al Samiya Corporation",
+      "sector": "Construction",
+      "city": "Riyadh",
+      "flags": [
+        "legacy-domain"
+      ]
+    },
+    {
+      "email": "alsuwaiket@saudionline.com.sa",
+      "org": "saudionline.com.sa",
+      "flags": [
+        "legacy-domain"
+      ]
+    },
+    {
+      "email": "alwassel@anet.net.sa",
+      "org": "anet.net.sa"
+    },
+    {
+      "email": "aly@el-zayat.com",
+      "org": "el-zayat.com"
+    },
+    {
+      "email": "alyaseen@danah.com",
+      "org": "Al Yaseen Agricultural Company",
+      "sector": "Basic Materials"
+    },
+    {
+      "email": "amcosd@sps.net.sa",
+      "org": "Adhesive Manufacturing Company",
+      "sector": "Basic Materials",
+      "city": "Jeddah",
+      "flags": [
+        "legacy-domain"
+      ]
+    },
+    {
+      "email": "amisal@xenel.com",
+      "org": "AMI Saudi Arabia",
+      "sector": "Healthcare",
+      "city": "Jeddah"
+    },
+    {
+      "email": "ampo@ampo.com.sa",
+      "org": "ampo.com.sa"
+    },
+    {
+      "email": "amsari@emailsrvc.com",
+      "org": "emailsrvc.com"
+    },
+    {
+      "email": "anand@darinfotech.com",
+      "org": "darinfotech.com"
+    },
+    {
+      "email": "anaziq@ngha.med.sa",
+      "org": "ngha.med.sa"
+    },
+    {
+      "email": "anjalihead@suhuf.net.sa",
+      "org": "Anjali Trading Establishment",
+      "sector": "Industrial Manufacturing",
+      "city": "Riyadh"
+    },
+    {
+      "email": "anwar@assaudia.com.sa",
+      "org": "Saudi Real Estate Development Company",
+      "sector": "Real Estate",
+      "city": "Jeddah"
+    },
+    {
+      "email": "apmms@atco.com.sa",
+      "org": "ATCO Port Management and Marine Services",
+      "sector": "Transport",
+      "city": "Jeddah"
+    },
+    {
+      "email": "aqfk@sahara.com.sa",
+      "org": "Al Qahtani Fisk Electrical and Telecommunicatio",
+      "sector": "Construction",
+      "city": "Dammam"
+    },
+    {
+      "email": "aquarius@zajil.net",
+      "org": "Aquarius (Saudi Arabia)",
+      "sector": "Industrial Manufacturing",
+      "city": "Riyadh"
+    },
+    {
+      "email": "arabia@typsa.es",
+      "org": "typsa.es"
+    },
+    {
+      "email": "arabianaxles@hotmail.com",
+      "org": "Arabian Axles Foundries and Spare Parts Comp",
+      "sector": "Mining and Metals",
+      "city": "Dammam",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "arabjeddah@saudionline.com.sa",
+      "org": "Shipping Corporation of Saudi Arabia",
+      "sector": "Transport",
+      "city": "Jeddah",
+      "flags": [
+        "legacy-domain"
+      ]
+    },
+    {
+      "email": "arbaco@sps.net.sa",
+      "org": "Arba Company",
+      "sector": "Agriculture and Food",
+      "city": "Riyadh",
+      "flags": [
+        "legacy-domain"
+      ]
+    },
+    {
+      "email": "arbsco@yahoo.com",
+      "org": "yahoo.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "arcansa@zajil.net",
+      "org": "Arabian Contracting Association",
+      "sector": "Construction",
+      "city": "Jeddah"
+    },
+    {
+      "email": "arch@figuresgroup.co",
+      "org": "figuresgroup.co"
+    },
+    {
+      "email": "ard@zajil.net",
+      "org": "Abdulla Rashid Dossary and Partner Company",
+      "sector": "Construction",
+      "city": "Al Khobar"
+    },
+    {
+      "email": "ardt@al-rushaid.com",
+      "org": "Arabian Rockbits and Drilling Tools Company",
+      "sector": "Oil and Gas",
+      "city": "Al Khobar"
+    },
+    {
+      "email": "areel@otaishan.com.sa",
+      "org": "otaishan.com.sa"
+    },
+    {
+      "email": "armalshaiji@amiantit.com",
+      "org": "Ameron Saudi Arabia",
+      "sector": "Construction",
+      "city": "Dammam"
+    },
+    {
+      "email": "asayed@medermott.com",
+      "org": "McDermott Arabia Company",
+      "sector": "Oil and Gas"
+    },
+    {
+      "email": "asco@archirodon.net",
+      "org": "Saudi Archirodon Company",
+      "sector": "Construction",
+      "city": "Jeddah"
+    },
+    {
+      "email": "asdp@sdt.com.sa",
+      "org": "sdt.com.sa"
+    },
+    {
+      "email": "asif@ipc-ksa.com",
+      "org": "ipc-ksa.com"
+    },
+    {
+      "email": "aslamanjum@hotmail.com",
+      "org": "Al Mansour Industries",
+      "sector": "Construction",
+      "city": "Jeddah",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "astra@astra.com",
+      "org": "astra.com"
+    },
+    {
+      "email": "astra@pfbsh.com.sa",
+      "org": "Prince Fahd bin Sultan Hospital",
+      "sector": "Healthcare",
+      "city": "Tabuk"
+    },
+    {
+      "email": "atc-jeddah@sps.net.sa",
+      "org": "Arabian Trading Company for Cold Storage",
+      "sector": "Agriculture and Food",
+      "city": "Jeddah",
+      "flags": [
+        "legacy-domain"
+      ]
+    },
+    {
+      "email": "atlas4hr@hotmail.com",
+      "org": "hotmail.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "atlasahr@hotmail.com",
+      "org": "hotmail.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "attlashotel@arab.net.sa",
+      "org": "Hussein Hashim Al Attas and Sons Company",
+      "sector": "Travel and Tourism",
+      "city": "Riyadh"
+    },
+    {
+      "email": "ayalkhiary@arcom.com.sa",
+      "org": "arcom.com.sa"
+    },
+    {
+      "email": "aytb@qatar.net.qa",
+      "org": "qatar.net.qa"
+    },
+    {
+      "email": "azizbatterjee@yahoo.com",
+      "org": "Abdulaziz Abdulraouf Batterjee Commercial Esta",
+      "sector": "Conglomerates",
+      "city": "Jeddah",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "azizcomp@atheer.net.sa",
+      "org": "Aziz Company",
+      "sector": "Construction",
+      "city": "Riyadh",
+      "flags": [
+        "legacy-domain"
+      ]
+    },
+    {
+      "email": "azmicorp@hotmail.com",
+      "org": "Azmi Corporation",
+      "sector": "Agriculture and Food",
+      "city": "Riyadh",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "aztracon@tri.net.sa",
+      "org": "tri.net.sa"
+    },
+    {
+      "email": "backfillingjob@hotmail.com",
+      "org": "hotmail.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "bakri@sigasco.com",
+      "org": "Saudi Industrial Gas Company",
+      "sector": "Basic Materials",
+      "city": "Al Khobar"
+    },
+    {
+      "email": "bashrahil@sbm.net.sa",
+      "org": "Basharaheel Hospital",
+      "sector": "Healthcare",
+      "city": "Makkah"
+    },
+    {
+      "email": "batoul.ashi@exel.com",
+      "org": "exel.com"
+    },
+    {
+      "email": "baziad@baziad.com",
+      "org": "baziad.com"
+    },
+    {
+      "email": "bbanzon@al-hoty.com",
+      "org": "al-hoty.com"
+    },
+    {
+      "email": "bgrytrdgjed@hotmail.com",
+      "org": "Bougary Trading and Contracting Establishment",
+      "sector": "Industrial Manufacturing",
+      "city": "Jeddah",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "bijui@hakgroup.com",
+      "org": "hakgroup.com"
+    },
+    {
+      "email": "breem@awalnet.net.sa",
+      "org": "awalnet.net.sa",
+      "flags": [
+        "legacy-domain"
+      ]
+    },
+    {
+      "email": "btcconst@zajil.net",
+      "org": "Baker Trading and Contracting",
+      "sector": "Construction",
+      "city": "Riyadh"
+    },
+    {
+      "email": "callcenter@mobily.com.sa",
+      "org": "mobily.com.sa"
+    },
+    {
+      "email": "career@alharbitelecom.com",
+      "org": "alharbitelecom.com",
+      "flags": [
+        "hiring"
+      ]
+    },
+    {
+      "email": "career@safari.com.sa",
+      "org": "safari.com.sa",
+      "flags": [
+        "hiring"
+      ]
+    },
+    {
+      "email": "careers@akte.com.sa",
+      "org": "akte.com.sa",
+      "flags": [
+        "hiring"
+      ]
+    },
+    {
+      "email": "careers@almarai.com",
+      "org": "almarai.com",
+      "flags": [
+        "hiring"
+      ]
+    },
+    {
+      "email": "careers@anb.com.sa",
+      "org": "anb.com.sa",
+      "flags": [
+        "hiring"
+      ]
+    },
+    {
+      "email": "careers@gmail.com",
+      "org": "gmail.com",
+      "flags": [
+        "hiring",
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "careers@qcc.com.sa",
+      "org": "qcc.com.sa",
+      "flags": [
+        "hiring"
+      ]
+    },
+    {
+      "email": "careers@shb.com.sa",
+      "org": "shb.com.sa",
+      "flags": [
+        "hiring"
+      ]
+    },
+    {
+      "email": "careersaudi@sls.com.sa",
+      "org": "sls.com.sa",
+      "flags": [
+        "hiring"
+      ]
+    },
+    {
+      "email": "central@alpha-trading.com",
+      "org": "Alpha Trading and Shipping Agencies",
+      "sector": "Agriculture and Food",
+      "city": "Jeddah"
+    },
+    {
+      "email": "ceo@se.com.sa",
+      "org": "se.com.sa"
+    },
+    {
+      "email": "ceomail@nscsa.com.sa",
+      "org": "nscsa.com.sa"
+    },
+    {
+      "email": "cfo@alsalamaircraft.com.sa",
+      "org": "alsalamaircraft.com.sa"
+    },
+    {
+      "email": "cfo@redagroup.com",
+      "org": "redagroup.com"
+    },
+    {
+      "email": "chaoul@samir-photo.com",
+      "org": "samir-photo.com"
+    },
+    {
+      "email": "chemical.div@eajb.com.sa",
+      "org": "Juffali Chemical Products",
+      "sector": "Basic Materials",
+      "city": "Jeddah"
+    },
+    {
+      "email": "ckt41317@biglobe.ne.jp",
+      "org": "biglobe.ne.jp"
+    },
+    {
+      "email": "cmhiring@gmail.com",
+      "org": "gmail.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "colgatepalmolive@colpal.com",
+      "org": "Colgate-Palmolive Arabia",
+      "sector": "Consumer Goods",
+      "city": "Dammam"
+    },
+    {
+      "email": "comment@chevron.com",
+      "org": "chevron.com"
+    },
+    {
+      "email": "commercial@abahsain.net",
+      "org": "Saleh and Abdulaziz Abahsain Company",
+      "sector": "Conglomerates",
+      "city": "Al Khobar"
+    },
+    {
+      "email": "consult@masorg.com",
+      "org": "masorg.com"
+    },
+    {
+      "email": "contact@stc.com.sa",
+      "org": "stc.com.sa"
+    },
+    {
+      "email": "corporate@samslc.simis.com",
+      "org": "Saudi Arabian Markets and Shell Lubricants Co",
+      "city": "Jeddah"
+    },
+    {
+      "email": "csa@olayangroup.com",
+      "org": "Christensen Saudi Arabia",
+      "sector": "Oil and Gas",
+      "city": "Al Khobar"
+    },
+    {
+      "email": "csm.ksa@gmail.com",
+      "org": "gmail.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "customerservice@alhokair.com",
+      "org": "Mall of Arabia Jeddah",
+      "sector": "s Real Estate",
+      "city": "Jeddah"
+    },
+    {
+      "email": "cv@alrajhibank.com.sa",
+      "org": "alrajhibank.com.sa",
+      "flags": [
+        "hiring"
+      ]
+    },
+    {
+      "email": "cv@ardco.com.sa",
+      "org": "ardco.com.sa",
+      "flags": [
+        "hiring"
+      ]
+    },
+    {
+      "email": "dabbaghae@maaden.com.sa",
+      "org": "maaden.com.sa"
+    },
+    {
+      "email": "dagalh@icc.net.sa",
+      "org": "Al Dagal",
+      "sector": "Consumer Goods",
+      "city": "Madinah"
+    },
+    {
+      "email": "daghameen@natcom.com.sa",
+      "org": "natcom.com.sa"
+    },
+    {
+      "email": "dammam@sheraton.com",
+      "org": "Sheraton Dammam Hotel and Tower",
+      "sector": "Travel and Tourism",
+      "city": "Riyadh"
+    },
+    {
+      "email": "danfoss@emirates.net.ae",
+      "org": "emirates.net.ae"
+    },
+    {
+      "email": "darvico@al-rushaid.com",
+      "org": "Dresser Al Rushaid Valve and Instrument Comp",
+      "sector": "Oil and Gas",
+      "city": "Jubail"
+    },
+    {
+      "email": "dpsco@sahara.com.sa",
+      "org": "Drilling and Petroleum Services Company",
+      "sector": "Oil and Gas",
+      "city": "Al Khobar"
+    },
+    {
+      "email": "dpt@arabianbemco.co",
+      "org": "arabianbemco.co"
+    },
+    {
+      "email": "dsa@dywidag.com.sa",
+      "org": "Dywidag Saudi Arabia Company",
+      "sector": "Construction",
+      "city": "Jubail"
+    },
+    {
+      "email": "dynarabia@awalnet.net.sa",
+      "org": "Dynarabia Company",
+      "sector": "Industrial Manufacturing",
+      "city": "Riyadh",
+      "flags": [
+        "legacy-domain"
+      ]
+    },
+    {
+      "email": "ecareer@stc.com.sa",
+      "org": "stc.com.sa"
+    },
+    {
+      "email": "ect_jed@arab.net.sa",
+      "org": "Express Contracting and Trading",
+      "sector": "Industrial Manufacturing",
+      "city": "Jeddah"
+    },
+    {
+      "email": "ed.parker@bakeroiltools.com",
+      "org": "bakeroiltools.com"
+    },
+    {
+      "email": "edris@haj.com.sa",
+      "org": "haj.com.sa"
+    },
+    {
+      "email": "edse_otao@hotmail.com",
+      "org": "hotmail.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "edward@imc.com.sa",
+      "org": "imc.com.sa"
+    },
+    {
+      "email": "eeccj@yahoo.com",
+      "org": "Electrical and Electronic Contracting Company",
+      "sector": "Telecoms and IT",
+      "city": "Riyadh",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "eemco@nesma.net.sa",
+      "org": "Electronic Equipment Marketing Company",
+      "sector": "Telecoms and IT",
+      "city": "Dammam",
+      "flags": [
+        "legacy-domain"
+      ]
+    },
+    {
+      "email": "efira_1@yahoo.com",
+      "org": "yahoo.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "elie@albinali.com",
+      "org": "John Brown Saudi Arabia",
+      "sector": "Construction",
+      "city": "Dammam"
+    },
+    {
+      "email": "email@osulcapital.com",
+      "org": "Osool Capital",
+      "sector": "Financial Services",
+      "city": "Riyadh"
+    },
+    {
+      "email": "emd@alharbi.com.sa",
+      "org": "alharbi.com.sa"
+    },
+    {
+      "email": "enaizi@sahara.com.sa",
+      "org": "Al Enaizi Enterprises",
+      "sector": "Oil and Gas",
+      "city": "Al Khobar"
+    },
+    {
+      "email": "ess@electrolux.com.sa",
+      "org": "Electrolux Saudi Services",
+      "sector": "Construction",
+      "city": "Riyadh"
+    },
+    {
+      "email": "etrik@saudimall.com",
+      "org": "Tysir Factories and Hotels",
+      "sector": "Consumer Goods",
+      "city": "Jeddah"
+    },
+    {
+      "email": "eurabia@prime.net.sa",
+      "org": "Eurabia Engineering and Construction Company",
+      "sector": "Construction",
+      "city": "Al Khobar"
+    },
+    {
+      "email": "eweadmin@atco.com.sa",
+      "org": "East and West Express",
+      "sector": "Transport",
+      "city": "Al Khobar"
+    },
+    {
+      "email": "expocareer@gmail.com",
+      "org": "gmail.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "f.taha@biosaline.org.ae",
+      "org": "biosaline.org.ae"
+    },
+    {
+      "email": "fal@falgroup.com.sa",
+      "org": "Fal Holdings Arabia Company",
+      "sector": "Conglomerates",
+      "city": "Riyadh"
+    },
+    {
+      "email": "fax2417049@yahoo.co",
+      "org": "yahoo.co",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "fishingksa@gmail.com",
+      "org": "gmail.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "fkashkash@yahoo.com",
+      "org": "yahoo.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "fmyaeout@zamilcd.com.sa",
+      "org": "National Power Company",
+      "city": "Dammam"
+    },
+    {
+      "email": "fooda7@hotmail.com",
+      "org": "hotmail.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "foodworld@mail.com",
+      "org": "mail.com"
+    },
+    {
+      "email": "fuad@awalnet.com.sa",
+      "org": "Fuad Al Fadhli Trading Establishment",
+      "sector": "Healthcare",
+      "city": "Riyadh"
+    },
+    {
+      "email": "furfab@jrec.com.sa",
+      "org": "jrec.com.sa"
+    },
+    {
+      "email": "g_m@alumaco.com",
+      "org": "alumaco.com"
+    },
+    {
+      "email": "gaco@awalnet.net.sa",
+      "org": "Gassim Agricultural Company",
+      "sector": "Agriculture and Food",
+      "city": "Buraidah",
+      "flags": [
+        "legacy-domain"
+      ]
+    },
+    {
+      "email": "gacpcj@icc.net.sa",
+      "org": "General Agencies and Contracting",
+      "sector": "Construction",
+      "city": "Jeddah"
+    },
+    {
+      "email": "gcc.alolayan@oshco.com",
+      "org": "General Contracting Company",
+      "sector": "Industrial Manufacturing",
+      "city": "Al Khobar"
+    },
+    {
+      "email": "gdcjed@yahoo.com",
+      "org": "yahoo.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "general@nic.com.sa",
+      "org": "nic.com.sa"
+    },
+    {
+      "email": "ghalili@aujan.com.sa",
+      "org": "aujan.com.sa"
+    },
+    {
+      "email": "girc@qatar.net.qa",
+      "org": "Gulf Industries for Refrigeration and Catering Co",
+      "sector": "Conglomerates"
+    },
+    {
+      "email": "gm_riyadh@sheraton.com.sa",
+      "org": "Sheraton Riyadh Hotel and Towers",
+      "sector": "Travel and Tourism",
+      "city": "Makkah"
+    },
+    {
+      "email": "gncr@emirates.net.ae",
+      "org": "General Ceramics",
+      "sector": "Construction"
+    },
+    {
+      "email": "group.ho@taher-group.com.sa",
+      "org": "Taher Group",
+      "sector": "Conglomerates",
+      "city": "Jeddah"
+    },
+    {
+      "email": "gteco@hotmail.com",
+      "org": "General Trading and Equipment Company",
+      "sector": "Industrial Manufacturing",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "gulfelite@hotmail.com",
+      "org": "hotmail.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "h0824@accor-hotels.com",
+      "org": "Hotel Al Hamra Sofitel",
+      "sector": "Travel and Tourism",
+      "city": "Najran"
+    },
+    {
+      "email": "hadadi.ha@pg.com",
+      "org": "pg.com"
+    },
+    {
+      "email": "harbourm@camerondiv.com",
+      "org": "camerondiv.com"
+    },
+    {
+      "email": "hawatrading@nesma.net.sa",
+      "org": "Hawa Trading and Contracting",
+      "sector": "Industrial Manufacturing",
+      "city": "Al Khobar",
+      "flags": [
+        "legacy-domain"
+      ]
+    },
+    {
+      "email": "headoffice@alhussan.edu.sa",
+      "org": "Al Hussan Group",
+      "sector": "Services",
+      "city": "Dammam"
+    },
+    {
+      "email": "helpdefk@almisehal.com",
+      "org": "almisehal.com"
+    },
+    {
+      "email": "hemu.d.amin@boeing.com",
+      "org": "Boeing Middle East",
+      "sector": "Services",
+      "city": "Dammam"
+    },
+    {
+      "email": "hhc@hadic.com",
+      "org": "Hadi Haider Company",
+      "sector": "Construction"
+    },
+    {
+      "email": "hijramadinah@interconti.com",
+      "org": "Dar Al Hijra InterContinental Madinah",
+      "sector": "Travel and Tourism",
+      "city": "Dammam"
+    },
+    {
+      "email": "ho@argasksa.com",
+      "org": "Arabian Geophysical and Surveying Company",
+      "sector": "Oil and Gas",
+      "city": "Al Khobar"
+    },
+    {
+      "email": "ho@gtcl.com.sa",
+      "org": "Gulf Trading Corporation",
+      "sector": "Consumer Goods",
+      "city": "Al Khobar"
+    },
+    {
+      "email": "hotel.madinah@moevenpick.com",
+      "org": "Movenpick Hotel Madinah",
+      "sector": "Travel and Tourism",
+      "city": "Riyadh"
+    },
+    {
+      "email": "hotjob7@yahoo.com",
+      "org": "yahoo.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "hr_510@yahoo.com",
+      "org": "yahoo.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "hr-e@safari-e.com",
+      "org": "safari-e.com"
+    },
+    {
+      "email": "hr@alhussan.edu.sa",
+      "org": "alhussan.edu.sa",
+      "flags": [
+        "hiring"
+      ]
+    },
+    {
+      "email": "hr@alkhorayef.com",
+      "org": "alkhorayef.com",
+      "flags": [
+        "hiring"
+      ]
+    },
+    {
+      "email": "hr@allied-medical.com",
+      "org": "allied-medical.com",
+      "flags": [
+        "hiring"
+      ]
+    },
+    {
+      "email": "hr@alsuroor.com",
+      "org": "alsuroor.com",
+      "flags": [
+        "hiring"
+      ]
+    },
+    {
+      "email": "hr@daleelteq.com",
+      "org": "daleelteq.com",
+      "flags": [
+        "hiring"
+      ]
+    },
+    {
+      "email": "hr@jatco.com.sa",
+      "org": "jatco.com.sa",
+      "flags": [
+        "hiring"
+      ]
+    },
+    {
+      "email": "hr@nasaviation.com",
+      "org": "nasaviation.com",
+      "flags": [
+        "hiring"
+      ]
+    },
+    {
+      "email": "hr@sfc-ksa.com",
+      "org": "sfc-ksa.com",
+      "flags": [
+        "hiring"
+      ]
+    },
+    {
+      "email": "hr@sipchem.com",
+      "org": "sipchem.com",
+      "flags": [
+        "hiring"
+      ]
+    },
+    {
+      "email": "hr2004rd@yahoo.com",
+      "org": "yahoo.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "hrd@ermatc.com",
+      "org": "ermatc.com",
+      "flags": [
+        "hiring"
+      ]
+    },
+    {
+      "email": "hrd@mynaghi.com.sa",
+      "org": "mynaghi.com.sa",
+      "flags": [
+        "hiring"
+      ]
+    },
+    {
+      "email": "hrd@robian.com.sa",
+      "org": "robian.com.sa",
+      "flags": [
+        "hiring"
+      ]
+    },
+    {
+      "email": "hrd@stesa.com",
+      "org": "stesa.com",
+      "flags": [
+        "hiring"
+      ]
+    },
+    {
+      "email": "hrdept@alsalamircraft.com.sa",
+      "org": "alsalamircraft.com.sa",
+      "flags": [
+        "hiring"
+      ]
+    },
+    {
+      "email": "hrjed@hotpop.com",
+      "org": "hotpop.com"
+    },
+    {
+      "email": "hrm@mscc.com.sa",
+      "org": "mscc.com.sa"
+    },
+    {
+      "email": "hrmanager04@yahoo.com",
+      "org": "yahoo.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "hrms_info@yahoo.com",
+      "org": "yahoo.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "hrryd@hotmail.com",
+      "org": "hotmail.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "hrsaudi@jatco.com.sa",
+      "org": "jatco.com.sa",
+      "flags": [
+        "hiring"
+      ]
+    },
+    {
+      "email": "hsmco@naseej.com.sa",
+      "org": "Houssam Trading and Contracting Company",
+      "sector": "Conglomerates",
+      "city": "Riyadh",
+      "flags": [
+        "legacy-domain"
+      ]
+    },
+    {
+      "email": "humres@alhamaco.co",
+      "org": "alhamaco.co"
+    },
+    {
+      "email": "ibrahim@sirajcapital.com",
+      "org": "Siraj Hospitality Investment Company",
+      "sector": "Travel and Tourism",
+      "city": "Jeddah"
+    },
+    {
+      "email": "idris.slc@eajb.com.sa",
+      "org": "eajb.com.sa"
+    },
+    {
+      "email": "ifo@umg.com.sa",
+      "org": "umg.com.sa"
+    },
+    {
+      "email": "ignou@ateico.net",
+      "org": "ateico.net"
+    },
+    {
+      "email": "iimit@sahara.com.sa",
+      "org": "sahara.com.sa"
+    },
+    {
+      "email": "imad@pilogksa.com",
+      "org": "pilogksa.com"
+    },
+    {
+      "email": "imanmadinah@interconti.com",
+      "org": "Dar Al Iman InterContinental Madinah",
+      "sector": "Travel and Tourism",
+      "city": "Madinah"
+    },
+    {
+      "email": "info-cv@hotmail.com",
+      "org": "hotmail.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "info.jeddah@radissonsas.com",
+      "org": "Radisson SAS Hotel Jeddah",
+      "sector": "Travel and Tourism",
+      "city": "Abha"
+    },
+    {
+      "email": "info.riyadh@radissonsas.com",
+      "org": "Radisson SAS Hotel Riyadh",
+      "sector": "Travel and Tourism",
+      "city": "Jeddah"
+    },
+    {
+      "email": "info.sa@tetrapak.com",
+      "org": "Tetra Pak Manufacturing",
+      "sector": "Basic Materials",
+      "city": "Jeddah"
+    },
+    {
+      "email": "info@abedalmishal.com",
+      "org": "abedalmishal.com"
+    },
+    {
+      "email": "info@abugshan.com",
+      "org": "House of Invention",
+      "sector": "Telecoms and IT",
+      "city": "Riyadh"
+    },
+    {
+      "email": "info@afia.com.sa",
+      "org": "Afia International Company",
+      "sector": "Agriculture and Food",
+      "city": "Jeddah"
+    },
+    {
+      "email": "info@ajwagroup.com",
+      "org": "Gulf Vegetable Oil Company",
+      "sector": "Agriculture and Food",
+      "city": "Dammam"
+    },
+    {
+      "email": "info@al-baddad.com",
+      "org": "al-baddad.com"
+    },
+    {
+      "email": "info@al-saghyir.com",
+      "org": "Al Saghyir Trading and Contracting Company",
+      "sector": "Conglomerates",
+      "city": "Riyadh"
+    },
+    {
+      "email": "info@alahli.com",
+      "org": "alahli.com"
+    },
+    {
+      "email": "info@alamodi.com",
+      "org": "Al Amoudi Beverage Industries",
+      "sector": "Agriculture and Food",
+      "city": "Jeddah"
+    },
+    {
+      "email": "info@alarkan.com",
+      "org": "alarkan.com"
+    },
+    {
+      "email": "info@albawardi.com",
+      "org": "M&A Al Bawardi Company",
+      "sector": "Conglomerates",
+      "city": "Dammam"
+    },
+    {
+      "email": "info@alfozan.com",
+      "org": "alfozan.com"
+    },
+    {
+      "email": "info@alhajry-overseas.com.sa",
+      "org": "alhajry-overseas.com.sa"
+    },
+    {
+      "email": "info@almultaka.com.sa",
+      "org": "almultaka.com.sa"
+    },
+    {
+      "email": "info@alnafea.com.sa",
+      "org": "alnafea.com.sa"
+    },
+    {
+      "email": "info@aloula.com",
+      "org": "aloula.com"
+    },
+    {
+      "email": "info@alrajhi-group.com",
+      "org": "Al Rajhi Investment Group",
+      "sector": "Financial Services",
+      "city": "Riyadh"
+    },
+    {
+      "email": "info@arabexperts.com",
+      "org": "arabexperts.com"
+    },
+    {
+      "email": "info@arabiancentres.com.sa",
+      "org": "Khurais Plaza",
+      "sector": "Real Estate",
+      "city": "Riyadh"
+    },
+    {
+      "email": "info@arabsea.com",
+      "org": "arabsea.com"
+    },
+    {
+      "email": "info@areeco.com",
+      "org": "areeco.com"
+    },
+    {
+      "email": "info@asasyah.com",
+      "org": "asasyah.com"
+    },
+    {
+      "email": "info@aseercorp.com",
+      "org": "Aseer Manufacturing Trading Tourism Agricultur",
+      "sector": "Financial Services",
+      "city": "Riyadh"
+    },
+    {
+      "email": "info@aswadgroup.com",
+      "org": "aswadgroup.com"
+    },
+    {
+      "email": "info@ccc.com.sa",
+      "org": "Consolidated Contractors Company - Saudi Arab",
+      "sector": "Construction",
+      "city": "Riyadh"
+    },
+    {
+      "email": "info@cellucom.com",
+      "org": "cellucom.com"
+    },
+    {
+      "email": "info@cityplazasa.com",
+      "org": "Al Bandar Trading Company",
+      "sector": "Real Estate",
+      "city": "Riyadh"
+    },
+    {
+      "email": "info@cpe.com.sa",
+      "org": "Consumer Products Establishment",
+      "sector": "Conglomerates",
+      "city": "Jeddah"
+    },
+    {
+      "email": "info@cristalarabia.com",
+      "org": "cristalarabia.com"
+    },
+    {
+      "email": "info@crowneplaza.com.sa",
+      "org": "Crowne Plaza Jeddah",
+      "sector": "Travel and Tourism",
+      "city": "Al Khobar"
+    },
+    {
+      "email": "info@dallah-hospital.com",
+      "org": "Dallah Healthcare Holding Company",
+      "sector": "Healthcare",
+      "city": "Riyadh"
+    },
+    {
+      "email": "info@dammamdev.com",
+      "org": "Al Dammam Construction Company",
+      "sector": "Real Estate",
+      "city": "Dammam"
+    },
+    {
+      "email": "info@dasmanfood.co",
+      "org": "dasmanfood.co"
+    },
+    {
+      "email": "info@detasad.com.sa",
+      "org": "detasad.com.sa"
+    },
+    {
+      "email": "info@edarat.com.sa",
+      "org": "Jowharat Al Babtain Holding Group",
+      "sector": "Real Estate",
+      "city": "Jeddah"
+    },
+    {
+      "email": "info@elm.com.sa",
+      "org": "elm.com.sa"
+    },
+    {
+      "email": "info@ept.com.sa",
+      "org": "Express Packing and Transport Company",
+      "sector": "Transport",
+      "city": "Dammam"
+    },
+    {
+      "email": "info@herfy.com",
+      "org": "herfy.com"
+    },
+    {
+      "email": "info@hp.com.sa",
+      "org": "hp.com.sa"
+    },
+    {
+      "email": "info@huta-marine.com",
+      "org": "Huta Group",
+      "sector": "Construction",
+      "city": "Jeddah"
+    },
+    {
+      "email": "info@iics.sa.com",
+      "org": "iics.sa.com"
+    },
+    {
+      "email": "info@imo.com.sa",
+      "org": "Industrial Materials Organisation",
+      "sector": "Industrial Manufacturing",
+      "city": "Riyadh"
+    },
+    {
+      "email": "info@infoline.com.sa",
+      "org": "infoline.com.sa"
+    },
+    {
+      "email": "info@jabalomar.com",
+      "org": "jabalomar.com"
+    },
+    {
+      "email": "info@keylink.com",
+      "org": "keylink.com"
+    },
+    {
+      "email": "info@madina.com.sa",
+      "org": "Madina Industrial Investment Company",
+      "sector": "Financial Services",
+      "city": "Madinah"
+    },
+    {
+      "email": "info@mercan.com",
+      "org": "mercan.com"
+    },
+    {
+      "email": "info@mis.com.sa",
+      "org": "mis.com.sa"
+    },
+    {
+      "email": "info@msargroup.com",
+      "org": "msargroup.com"
+    },
+    {
+      "email": "info@mugbil.com",
+      "org": "mugbil.com"
+    },
+    {
+      "email": "info@nafkal.com",
+      "org": "nafkal.com"
+    },
+    {
+      "email": "info@ncsc.com.sa",
+      "org": "ncsc.com.sa"
+    },
+    {
+      "email": "info@newera.com.sa",
+      "org": "newera.com.sa"
+    },
+    {
+      "email": "info@petrominoils.com",
+      "org": "petrominoils.com"
+    },
+    {
+      "email": "info@ports.gov.sa",
+      "org": "Jeddah Islamic Port",
+      "sector": "Transport",
+      "city": "Dammam"
+    },
+    {
+      "email": "info@qecons.com",
+      "org": "qecons.com"
+    },
+    {
+      "email": "info@redanational.com",
+      "org": "Reda National Company for Road Paint and Hig",
+      "sector": "Basic Materials",
+      "city": "Riyadh"
+    },
+    {
+      "email": "info@sa.abb.com",
+      "org": "ABB Electrical Industries Company",
+      "sector": "Industrial Manufacturing",
+      "city": "Riyadh"
+    },
+    {
+      "email": "info@saadtrading.com",
+      "org": "Saad Trading and Contracting Company",
+      "sector": "Services",
+      "city": "Riyadh"
+    },
+    {
+      "email": "info@sadaf.sabic.com",
+      "org": "Saudi Petrochemical Company",
+      "city": "Jubail"
+    },
+    {
+      "email": "info@sails.net",
+      "org": "sails.net"
+    },
+    {
+      "email": "info@sapac.com.sa",
+      "org": "sapac.com.sa"
+    },
+    {
+      "email": "info@saparabia.com",
+      "org": "saparabia.com"
+    },
+    {
+      "email": "info@sasref.com.sa",
+      "org": "sasref.com.sa"
+    },
+    {
+      "email": "info@saudi-re.com",
+      "org": "Saudi Reinsurance Company",
+      "sector": "Financial Services",
+      "city": "Jeddah"
+    },
+    {
+      "email": "info@saudicast.com",
+      "org": "saudicast.com"
+    },
+    {
+      "email": "info@saudichainlinkfence.com.sa",
+      "org": "Saudi Chainlink Fence Manufacturing Company",
+      "sector": "Mining and Metals",
+      "city": "Dammam"
+    },
+    {
+      "email": "info@saudichamber.org.sa",
+      "org": "saudichamber.org.sa"
+    },
+    {
+      "email": "info@saudichevron.com",
+      "org": "Saudi Chevron Phillips Company",
+      "city": "Jubail"
+    },
+    {
+      "email": "info@saudidiesel.com.sa",
+      "org": "Saudi Diesel Generators Company",
+      "sector": "Industrial Manufacturing",
+      "city": "Al Khobar"
+    },
+    {
+      "email": "info@sipchem.com",
+      "org": "International Methanol Company",
+      "sector": "Oil and Gas",
+      "city": "Jubail"
+    },
+    {
+      "email": "info@sony.com",
+      "org": "sony.com"
+    },
+    {
+      "email": "info@takseet.com.sa",
+      "org": "National Installment Company",
+      "sector": "Financial Services",
+      "city": "Riyadh"
+    },
+    {
+      "email": "info@tecnimontarabia.com.sa",
+      "org": "Tecnimont Arabia",
+      "sector": "Construction",
+      "city": "Jeddah"
+    },
+    {
+      "email": "info@tetratech.com.sa",
+      "org": "tetratech.com.sa"
+    },
+    {
+      "email": "info@ttcoman.com",
+      "org": "ttcoman.com"
+    },
+    {
+      "email": "info@wec.com.sa",
+      "org": "wec.com.sa"
+    },
+    {
+      "email": "info@xenel.com",
+      "org": "National Petrochemical Industries Company",
+      "sector": "Oil and Gas",
+      "city": "Jeddah"
+    },
+    {
+      "email": "info@ybakanoo.com",
+      "org": "Yusuf Bin Ahmed Kanoo - Saudi Arabia",
+      "sector": "Conglomerates",
+      "city": "Dammam"
+    },
+    {
+      "email": "info@zahid.com",
+      "org": "zahid.com"
+    },
+    {
+      "email": "info@zahrang.com",
+      "org": "Arbah Real Estate - Saudi Arabia",
+      "sector": "Real Estate",
+      "city": "Riyadh"
+    },
+    {
+      "email": "info@zate.com.sa",
+      "org": "zate.com.sa"
+    },
+    {
+      "email": "initiallastname@cplksa.com",
+      "org": "Chiyoda Petrostar Company",
+      "sector": "Construction",
+      "city": "Jeddah"
+    },
+    {
+      "email": "inquiries@apvme.com.sa",
+      "org": "APV Middle East",
+      "sector": "Industrial Manufacturing",
+      "city": "Riyadh"
+    },
+    {
+      "email": "intercol@emirates.net.ae",
+      "org": "emirates.net.ae"
+    },
+    {
+      "email": "intertech@intertech-pal.com",
+      "org": "intertech-pal.com"
+    },
+    {
+      "email": "inuae@yahoo.com",
+      "org": "yahoo.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "irasheed2006@yahoo.com",
+      "org": "yahoo.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "ispf@altuwairqi.com.sa",
+      "org": "Al Ittefaq Steel Products Company",
+      "sector": "Mining and Metals",
+      "city": "Dammam"
+    },
+    {
+      "email": "it@mobily.com.sa",
+      "org": "mobily.com.sa"
+    },
+    {
+      "email": "itjobs@alhokair.com.sa",
+      "org": "alhokair.com.sa"
+    },
+    {
+      "email": "itjobs@kojamjoom.com",
+      "org": "kojamjoom.com"
+    },
+    {
+      "email": "iyadfakhry@hotmail.com",
+      "org": "hotmail.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "jadawell@hotmail.com",
+      "org": "Abdulla Busbate and Partners Company",
+      "sector": "Construction",
+      "city": "Dammam",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "jalal.mounayar@gmail.com",
+      "org": "gmail.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "jaleel@safari.com.sa",
+      "org": "safari.com.sa"
+    },
+    {
+      "email": "jamjomco@ogertel.com",
+      "org": "Jamjoom Corporation for Commerce and Industr",
+      "sector": "Conglomerates",
+      "city": "Jeddah"
+    },
+    {
+      "email": "jamshed@smbasuliman.co",
+      "org": "smbasuliman.co"
+    },
+    {
+      "email": "jassimcom@danah.com",
+      "org": "Ebrahim Bin Jassim Al Jassim",
+      "sector": "Conglomerates",
+      "city": "Dammam"
+    },
+    {
+      "email": "jbcmc@jbcmc.com",
+      "org": "Jeddah Beverage Can Making Company",
+      "sector": "Mining and Metals",
+      "city": "Jeddah"
+    },
+    {
+      "email": "jciservices@yahoo.com",
+      "org": "yahoo.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "jeddah@interconti.com",
+      "org": "InterContinental Jeddah",
+      "sector": "Travel and Tourism",
+      "city": "Jubail"
+    },
+    {
+      "email": "jeddah@sa.ey.com",
+      "org": "Ernst and Young Saudi Arabia",
+      "sector": "Services",
+      "city": "Jeddah"
+    },
+    {
+      "email": "jeddah987@yahoo.com",
+      "org": "yahoo.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "jeddahsheraton@starwood.com",
+      "org": "Jeddah Sheraton Hotel",
+      "sector": "Travel and Tourism",
+      "city": "Jeddah"
+    },
+    {
+      "email": "jedgenmbox@cmacgm.com",
+      "org": "Mideast Trading Agencies Company",
+      "sector": "Transport",
+      "city": "Al Khobar"
+    },
+    {
+      "email": "jgcarabia@sahara.com.sa",
+      "org": "JGC Arabia",
+      "sector": "Construction",
+      "city": "Al Khobar"
+    },
+    {
+      "email": "jihad@amcde.com",
+      "org": "amcde.com"
+    },
+    {
+      "email": "jkawamoto@mdbio.org",
+      "org": "mdbio.org"
+    },
+    {
+      "email": "jobs_250@yahoo.com",
+      "org": "yahoo.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "jobs_a_m@yahoo.co",
+      "org": "yahoo.co",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "jobs_wfi@yahoo.com",
+      "org": "yahoo.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "jobs.gps@sps.net.sa",
+      "org": "sps.net.sa",
+      "flags": [
+        "legacy-domain"
+      ]
+    },
+    {
+      "email": "jobs.si@intercol.com",
+      "org": "intercol.com"
+    },
+    {
+      "email": "jobs@aas.com.sa",
+      "org": "aas.com.sa",
+      "flags": [
+        "hiring"
+      ]
+    },
+    {
+      "email": "jobs@acssco.com",
+      "org": "acssco.com",
+      "flags": [
+        "hiring"
+      ]
+    },
+    {
+      "email": "jobs@aecl.com",
+      "org": "aecl.com",
+      "flags": [
+        "hiring"
+      ]
+    },
+    {
+      "email": "jobs@alfransi.com.sa",
+      "org": "alfransi.com.sa",
+      "flags": [
+        "hiring"
+      ]
+    },
+    {
+      "email": "jobs@badgaish.com",
+      "org": "badgaish.com",
+      "flags": [
+        "hiring"
+      ]
+    },
+    {
+      "email": "jobs@carriersaudi.com",
+      "org": "carriersaudi.com",
+      "flags": [
+        "hiring"
+      ]
+    },
+    {
+      "email": "jobs@econcepts.com.sa",
+      "org": "econcepts.com.sa",
+      "flags": [
+        "hiring"
+      ]
+    },
+    {
+      "email": "jobs@isys.com.sa",
+      "org": "isys.com.sa",
+      "flags": [
+        "hiring"
+      ]
+    },
+    {
+      "email": "jobs@kfmc.med.sa",
+      "org": "kfmc.med.sa",
+      "flags": [
+        "hiring"
+      ]
+    },
+    {
+      "email": "jobs@loyalty-inc.com",
+      "org": "loyalty-inc.com",
+      "flags": [
+        "hiring"
+      ]
+    },
+    {
+      "email": "jobs@metco.com.sa",
+      "org": "metco.com.sa",
+      "flags": [
+        "hiring"
+      ]
+    },
+    {
+      "email": "jobs@nasco.com.sa",
+      "org": "nasco.com.sa",
+      "flags": [
+        "hiring"
+      ]
+    },
+    {
+      "email": "jobs@robian.com.sa",
+      "org": "robian.com.sa",
+      "flags": [
+        "hiring"
+      ]
+    },
+    {
+      "email": "jobs@wataniaind.com",
+      "org": "wataniaind.com",
+      "flags": [
+        "hiring"
+      ]
+    },
+    {
+      "email": "jobs2005_cv@yahoo.com",
+      "org": "yahoo.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "jobs2005e@yahoo.com",
+      "org": "yahoo.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "jobsearchksa@gmail.com",
+      "org": "gmail.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "jobsfd@spgsteel.com",
+      "org": "spgsteel.com"
+    },
+    {
+      "email": "jobsht83@yahoo.com",
+      "org": "yahoo.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "jobsin2006@yahoo.com",
+      "org": "yahoo.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "jobsready@gmail.com",
+      "org": "gmail.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "jodcksa@yahoo.com",
+      "org": "Jabal Omar Development Company",
+      "sector": "Real Estate",
+      "city": "Makkah",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "jomac@alnaba.com",
+      "org": "Jubail Organisation for Industrial Maintenance a",
+      "sector": "Construction",
+      "city": "Jubail"
+    },
+    {
+      "email": "jopcv@yahoo.com",
+      "org": "yahoo.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "juffali@eajb.com.sa",
+      "org": "Juffali Auto Parts Company",
+      "sector": "Automotive",
+      "city": "Jeddah"
+    },
+    {
+      "email": "k.m.m.f@hotmail.com",
+      "org": "hotmail.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "kafco@cyberia.net.sa",
+      "org": "Aluminum Kitchens and Furnitures",
+      "sector": "Mining and Metals",
+      "city": "Riyadh"
+    },
+    {
+      "email": "kakisons@saudionline.com.sa",
+      "org": "Ahmed Saleh Kaki Sons Company",
+      "sector": "Conglomerates",
+      "city": "Jeddah",
+      "flags": [
+        "legacy-domain"
+      ]
+    },
+    {
+      "email": "karan@al-araj.com",
+      "org": "al-araj.com"
+    },
+    {
+      "email": "kas@axiomtelecom.co",
+      "org": "axiomtelecom.co"
+    },
+    {
+      "email": "kemya@kemya.sabic.com",
+      "org": "Al Jubail Petrochemical Company",
+      "sector": "Oil and Gas",
+      "city": "Jubail"
+    },
+    {
+      "email": "kfia@pca.gov.sa",
+      "org": "King Fahd International Airport",
+      "sector": "Transport",
+      "city": "Jeddah"
+    },
+    {
+      "email": "kfmc@kfmc.med.sa",
+      "org": "kfmc.med.sa"
+    },
+    {
+      "email": "kfshdm@gmail.com",
+      "org": "gmail.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "khalifaalsaif@alsaifgroup.com",
+      "org": "Al Saif Group",
+      "sector": "Automotive",
+      "city": "Riyadh"
+    },
+    {
+      "email": "kmasrouha@aaltaher.com",
+      "org": "aaltaher.com"
+    },
+    {
+      "email": "kmcinfo@kff.com",
+      "org": "Al Khozama Management Company",
+      "sector": "Real Estate",
+      "city": "Riyadh"
+    },
+    {
+      "email": "ksajob06@yahoo.com",
+      "org": "yahoo.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "kuthb@brainlease.com",
+      "org": "brainlease.com"
+    },
+    {
+      "email": "lamnalcoksa@rezayat.com.sa",
+      "org": "Lamnalco - Saudi Arabia",
+      "sector": "Transport",
+      "city": "Riyadh"
+    },
+    {
+      "email": "lbn@yahoo.com",
+      "org": "yahoo.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "linkindiagcc@yahoo.com",
+      "org": "yahoo.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "lock777@gmail.com",
+      "org": "gmail.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "ltr_c@yahoo.com",
+      "org": "yahoo.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "m0306@jobsincompany.co",
+      "org": "jobsincompany.co"
+    },
+    {
+      "email": "maaden@maaden.co",
+      "org": "maaden.co"
+    },
+    {
+      "email": "maaden@maaden.com.sa",
+      "org": "maaden.com.sa"
+    },
+    {
+      "email": "mail@acec-sa.com",
+      "org": "acec-sa.com"
+    },
+    {
+      "email": "mail@jarirbookstore.com",
+      "org": "Jarir Marketing",
+      "sector": "Consumer Goods",
+      "city": "Riyadh"
+    },
+    {
+      "email": "mail@mcont.com",
+      "org": "Al Muhaidib Contracting Company",
+      "sector": "Construction",
+      "city": "Dammam"
+    },
+    {
+      "email": "mail@meedco.net",
+      "org": "Hyundai Engineering and Construction Company",
+      "sector": "Construction",
+      "city": "Riyadh"
+    },
+    {
+      "email": "main@alamiah.com.sa",
+      "org": "Al Alamiah Electronics Company (Saudi Arabia)",
+      "sector": "Telecoms and IT",
+      "city": "Riyadh"
+    },
+    {
+      "email": "makkah@interconti.com",
+      "org": "Makkah InterContinental",
+      "sector": "Travel and Tourism",
+      "city": "Makkah"
+    },
+    {
+      "email": "malawi@unitedproperties.com.sa",
+      "org": "Aliat Almadinah Mall",
+      "sector": "Real Estate",
+      "city": "Jeddah"
+    },
+    {
+      "email": "malls@othaim.com",
+      "org": "Al Othaim Mall Al Ehsa",
+      "sector": "Real Estate",
+      "city": "Riyadh"
+    },
+    {
+      "email": "management@agr.com",
+      "org": "Al Bawardy Consulting Engineers",
+      "sector": "Construction",
+      "city": "Riyadh"
+    },
+    {
+      "email": "mangcv@yahoo.com",
+      "org": "yahoo.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "marblek6@yahoo.com",
+      "org": "yahoo.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "mardig@samir-photo.com",
+      "org": "samir-photo.com"
+    },
+    {
+      "email": "marketcv@yahoo.com",
+      "org": "yahoo.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "marketinginfo@alrabie.com",
+      "org": "alrabie.com"
+    },
+    {
+      "email": "mayassin@othaim.com",
+      "org": "Al Othaim Real Estate Investment and Develop",
+      "sector": "Real Estate",
+      "city": "Riyadh"
+    },
+    {
+      "email": "mcd@rezagroup.com",
+      "org": "REZA Food Service Company",
+      "sector": "Travel and Tourism",
+      "city": "Jeddah"
+    },
+    {
+      "email": "mchehab@indsci.com",
+      "org": "indsci.com"
+    },
+    {
+      "email": "mdoffice@arhgroup.com.sa",
+      "org": "Abdulaziz Al Rashed Al Humaid Company",
+      "sector": "Agriculture and Food",
+      "city": "Riyadh"
+    },
+    {
+      "email": "menahr@gmail.com",
+      "org": "gmail.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "mfb@ae.net.sa",
+      "org": "Saudi Minerva Company",
+      "sector": "Industrial Manufacturing",
+      "city": "Riyadh"
+    },
+    {
+      "email": "mhrs.jedsa.dom@marriott.com",
+      "org": "Jeddah Marriott Hotel",
+      "sector": "Travel and Tourism",
+      "city": "Jeddah"
+    },
+    {
+      "email": "mike.scott@bakeratlas.com",
+      "org": "bakeratlas.com"
+    },
+    {
+      "email": "minhajroma@hotmail.com",
+      "org": "hotmail.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "mkhawaja@nournet.com.sa",
+      "org": "Saudi Sadelmi Technical Construction Company",
+      "sector": "Construction",
+      "city": "Riyadh"
+    },
+    {
+      "email": "moussa@cmci-sa.com",
+      "org": "cmci-sa.com"
+    },
+    {
+      "email": "mrasing@kfshrc.edu.sa",
+      "org": "kfshrc.edu.sa"
+    },
+    {
+      "email": "msc@msc-holding.com",
+      "org": "Abdul Mohsen Al Mohaisen and Sons Company",
+      "sector": "Conglomerates",
+      "city": "Riyadh"
+    },
+    {
+      "email": "mshafai@zajil.net",
+      "org": "Saud Al Shafai and Sons Constructors",
+      "sector": "Construction",
+      "city": "Al Khobar"
+    },
+    {
+      "email": "murwan75@hotmail.com",
+      "org": "Al Manar Trading Establishment",
+      "sector": "Healthcare",
+      "city": "Riyadh",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "myqassem@hotmail.com",
+      "org": "hotmail.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "n_somarajan@yahoo.com",
+      "org": "yahoo.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "najmi9455@yahoo.com",
+      "org": "yahoo.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "najran@holidayinn-sa.com",
+      "org": "Holiday Inn Najran",
+      "sector": "Travel and Tourism",
+      "city": "Jeddah"
+    },
+    {
+      "email": "nasr_hamed@sisco.com.sa",
+      "org": "Support Services Operations Company",
+      "sector": "Services",
+      "city": "Riyadh"
+    },
+    {
+      "email": "nassan0a0@yahoo.com",
+      "org": "yahoo.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "natel@natel.com.sa",
+      "org": "natel.com.sa"
+    },
+    {
+      "email": "ncmsdm@zajil.net",
+      "org": "zajil.net"
+    },
+    {
+      "email": "ncpc@napcogroup.com",
+      "org": "Napco Consumer Products Company",
+      "sector": "Consumer Goods",
+      "city": "Dammam"
+    },
+    {
+      "email": "ndc.fa@npsintl.com",
+      "org": "National Drilling Company - Saudi Arabia",
+      "sector": "Oil and Gas",
+      "city": "Dammam"
+    },
+    {
+      "email": "nfo@binjarboo.com.sa",
+      "org": "Mohammed Bin Jarboo Group of Works i",
+      "sector": "Construction"
+    },
+    {
+      "email": "nizar@hugayet.com.sa",
+      "org": "hugayet.com.sa"
+    },
+    {
+      "email": "nte@nte65.com",
+      "org": "National Trading Establishment for Contracting",
+      "sector": "Construction",
+      "city": "Riyadh"
+    },
+    {
+      "email": "ntext2@hr.xchanging.com",
+      "org": "hr.xchanging.com"
+    },
+    {
+      "email": "nw@mriwwuae.ae",
+      "org": "mriwwuae.ae"
+    },
+    {
+      "email": "o-aqs@awalnet.net.sa",
+      "org": "O&A Quality Surveyors",
+      "sector": "Services",
+      "city": "Riyadh",
+      "flags": [
+        "legacy-domain"
+      ]
+    },
+    {
+      "email": "oasissykes@hotmail.com",
+      "org": "Oasis Trading Establishment",
+      "sector": "Conglomerates",
+      "city": "Al Khobar",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "ocscl-jed@xtracom.sprint.com",
+      "org": "Oriental Commercial and Shipping Company",
+      "sector": "Transport",
+      "city": "Jeddah"
+    },
+    {
+      "email": "odico@olayandescon.com",
+      "org": "Olayan Descon Engineering Company",
+      "sector": "Mining and Metals",
+      "city": "Jubail"
+    },
+    {
+      "email": "office@gosaibi.net",
+      "org": "Yousef Ahmed Al Gosaibi and Partners",
+      "sector": "Conglomerates",
+      "city": "Dammam"
+    },
+    {
+      "email": "opct@opctl.net",
+      "org": "Orient Provision and Trading Company",
+      "sector": "Agriculture and Food",
+      "city": "Jeddah"
+    },
+    {
+      "email": "operations.rastanura@inspectorate.com.sa",
+      "org": "inspectorate.com.sa"
+    },
+    {
+      "email": "osico@olayangroup.com",
+      "org": "Olayan Saudi Investment Company",
+      "sector": "Financial Services",
+      "city": "Riyadh"
+    },
+    {
+      "email": "otaibiest@zajil.net",
+      "org": "Hathal A Otaibi Establishment",
+      "sector": "Conglomerates",
+      "city": "Al Khobar"
+    },
+    {
+      "email": "otcjed.fs@kuehne-nagel.com",
+      "org": "Orient Transport Company",
+      "sector": "Transport",
+      "city": "Riyadh"
+    },
+    {
+      "email": "otcjubal@sol.net.sa",
+      "org": "M A Al Oraini Trading and Contracting Company",
+      "sector": "Services",
+      "city": "Jeddah",
+      "flags": [
+        "legacy-domain"
+      ]
+    },
+    {
+      "email": "oussama@frankssaudi.com",
+      "org": "frankssaudi.com"
+    },
+    {
+      "email": "owder@nesma.net.sa",
+      "org": "Owaidah Development Company",
+      "sector": "Industrial Manufacturing",
+      "city": "Riyadh",
+      "flags": [
+        "legacy-domain"
+      ]
+    },
+    {
+      "email": "pcie@icc.com.sa",
+      "org": "icc.com.sa"
+    },
+    {
+      "email": "personnelksa@gmail.com",
+      "org": "gmail.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "pi-consult@sps.net.sa",
+      "org": "sps.net.sa",
+      "flags": [
+        "legacy-domain"
+      ]
+    },
+    {
+      "email": "pmd@pmd-co.com",
+      "org": "pmd-co.com"
+    },
+    {
+      "email": "precast@rancogroup.com",
+      "org": "Ranco Precast Concrete",
+      "sector": "Construction",
+      "city": "Riyadh"
+    },
+    {
+      "email": "privacy@kpmg.com",
+      "org": "kpmg.com"
+    },
+    {
+      "email": "purchase@epcco.com",
+      "org": "epcco.com"
+    },
+    {
+      "email": "ramah@rico-sa.com",
+      "org": "Ramah Aluminium Factory",
+      "sector": "Mining and Metals",
+      "city": "Riyadh"
+    },
+    {
+      "email": "rawabi@rawabiltd.com",
+      "org": "Rawabi Holding Company",
+      "sector": "Construction",
+      "city": "Al Khobar"
+    },
+    {
+      "email": "rcgc@riyadh-cables.com",
+      "org": "riyadh-cables.com"
+    },
+    {
+      "email": "rec1@alfanar.com",
+      "org": "alfanar.com"
+    },
+    {
+      "email": "recruit@anholdings.co",
+      "org": "anholdings.co",
+      "flags": [
+        "hiring"
+      ]
+    },
+    {
+      "email": "recruitment@kjo.com.sa",
+      "org": "kjo.com.sa",
+      "flags": [
+        "hiring"
+      ]
+    },
+    {
+      "email": "recruitment@saib.com.sa",
+      "org": "saib.com.sa",
+      "flags": [
+        "hiring"
+      ]
+    },
+    {
+      "email": "recruitsksa@yahoo.com",
+      "org": "yahoo.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "reservations.madinah@hilton.com",
+      "org": "Madinah Hilton",
+      "sector": "Travel and Tourism",
+      "city": "Taif"
+    },
+    {
+      "email": "resumes@deemah.com",
+      "org": "deemah.com",
+      "flags": [
+        "hiring"
+      ]
+    },
+    {
+      "email": "rgalloway@smith.com",
+      "org": "smith.com"
+    },
+    {
+      "email": "riyadh@interconti.com",
+      "org": "Riyadh InterContinental",
+      "sector": "Travel and Tourism",
+      "city": "Jeddah"
+    },
+    {
+      "email": "riyadh@medgulf.com",
+      "org": "Mediterranean and Gulf Cooperative Insurance a",
+      "sector": "Financial Services",
+      "city": "Riyadh"
+    },
+    {
+      "email": "rodmax@prime.net.sa",
+      "org": "Al Quraishi Marketing Company",
+      "sector": "Conglomerates",
+      "city": "Jeddah"
+    },
+    {
+      "email": "romaizan@al-romaizan.com",
+      "org": "Al Romaizan for Gold and Jewellery",
+      "sector": "Consumer Goods",
+      "city": "Riyadh"
+    },
+    {
+      "email": "roudah@cyberia.net.sa",
+      "org": "cyberia.net.sa"
+    },
+    {
+      "email": "s_hoshan@alsalamaircraft.com.sa",
+      "org": "alsalamaircraft.com.sa"
+    },
+    {
+      "email": "sa_careers@yahoo.co",
+      "org": "yahoo.co",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "saad1@saudionline.com.sa",
+      "org": "Saad Construction Establishment",
+      "sector": "Construction",
+      "city": "Riyadh",
+      "flags": [
+        "legacy-domain"
+      ]
+    },
+    {
+      "email": "sabs@kanoosa.com",
+      "org": "Saudi Arabian Bunkering Services",
+      "sector": "Transport",
+      "city": "Jeddah"
+    },
+    {
+      "email": "sacarbo@awalnet.net.sa",
+      "org": "Saudi Carbonate Company",
+      "sector": "Construction",
+      "city": "Riyadh",
+      "flags": [
+        "legacy-domain"
+      ]
+    },
+    {
+      "email": "sadm@naseej.com.sa",
+      "org": "Saudi Arabian Dames and Moore",
+      "sector": "Construction",
+      "city": "Riyadh",
+      "flags": [
+        "legacy-domain"
+      ]
+    },
+    {
+      "email": "sairuh@saicoins.com",
+      "org": "Saudi Arabian Cooperative Insurance Company",
+      "sector": "Financial Services",
+      "city": "Riyadh"
+    },
+    {
+      "email": "salaliw@yahoo.com",
+      "org": "yahoo.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "salam@atc.com.sa",
+      "org": "atc.com.sa"
+    },
+    {
+      "email": "sales-dam@sacco-smc.com",
+      "org": "Saudi Coating Company",
+      "sector": "Mining and Metals",
+      "city": "Jeddah"
+    },
+    {
+      "email": "sales-minhal@holidayinn-sa.com",
+      "org": "Minhal Holiday Inn Riyadh",
+      "sector": "Travel and Tourism",
+      "city": "Taif"
+    },
+    {
+      "email": "sales.npt.sa@npsintl.com",
+      "org": "National Petroleum Technology",
+      "sector": "Oil and Gas",
+      "city": "Dammam"
+    },
+    {
+      "email": "sales@almanhal.com",
+      "org": "Al Manhal Water Factory",
+      "sector": "Agriculture and Food",
+      "city": "Riyadh"
+    },
+    {
+      "email": "sales@arabequipmentest.com",
+      "org": "Arab Equipment Establishment",
+      "sector": "Industrial Manufacturing",
+      "city": "Dammam"
+    },
+    {
+      "email": "sales@ati.com.sa",
+      "org": "ati.com.sa"
+    },
+    {
+      "email": "sales@cmdc.com.sa",
+      "org": "Basic Chemical Industries",
+      "sector": "Basic Materials",
+      "city": "Dammam"
+    },
+    {
+      "email": "sales@gcspaints.com",
+      "org": "gcspaints.com"
+    },
+    {
+      "email": "sales@natmetalco.com",
+      "org": "natmetalco.com"
+    },
+    {
+      "email": "sales@somac-it.com",
+      "org": "somac-it.com"
+    },
+    {
+      "email": "sami@suhuf.net.sa",
+      "org": "suhuf.net.sa"
+    },
+    {
+      "email": "sappco@olayangroup.com",
+      "org": "Saudi Plastic Products Company",
+      "sector": "Basic Materials",
+      "city": "Riyadh"
+    },
+    {
+      "email": "sas@saipem.eni.it",
+      "org": "Saudi Arabian Saipem"
+    },
+    {
+      "email": "saudi_tal_company@makshaff.co",
+      "org": "Saudi Tal Commerce and Contracts Company",
+      "sector": "Construction",
+      "city": "Riyadh"
+    },
+    {
+      "email": "saudi.a@rediffmail.co",
+      "org": "rediffmail.co"
+    },
+    {
+      "email": "saudi@ericsson.com",
+      "org": "Saudi Ericsson Communications Company",
+      "sector": "Telecoms and IT",
+      "city": "Riyadh"
+    },
+    {
+      "email": "saudi@zpebint.com",
+      "org": "ZP Arabia Drilling Company",
+      "city": "Al Khobar"
+    },
+    {
+      "email": "saudianfal@yahoo.com",
+      "org": "yahoo.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "saudibauer@zajil.net",
+      "org": "Saudi Bauer Foundation Contractors",
+      "sector": "Construction",
+      "city": "Jeddah"
+    },
+    {
+      "email": "saudican@yahoo.com",
+      "org": "Saudi Can Company",
+      "sector": "Mining and Metals",
+      "city": "Jeddah",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "saudiconstco@zagil.net",
+      "org": "Saudi Construction Company",
+      "sector": "Construction",
+      "city": "Riyadh"
+    },
+    {
+      "email": "sawary@zajil.net",
+      "org": "Sawary Trading and Contracting",
+      "sector": "Construction",
+      "city": "Jeddah"
+    },
+    {
+      "email": "scc@sps.net.sa",
+      "org": "Saudi Coldstorage Company",
+      "sector": "Agriculture and Food",
+      "city": "Jeddah",
+      "flags": [
+        "legacy-domain"
+      ]
+    },
+    {
+      "email": "sdgc@sps.net.sa",
+      "org": "sps.net.sa",
+      "flags": [
+        "legacy-domain"
+      ]
+    },
+    {
+      "email": "sdjobs@sps.net.sa",
+      "org": "sps.net.sa",
+      "flags": [
+        "legacy-domain"
+      ]
+    },
+    {
+      "email": "secjeddah@zajil.net",
+      "org": "Saudi Elevator Company",
+      "sector": "Industrial Manufacturing",
+      "city": "Jeddah"
+    },
+    {
+      "email": "segi@segisa.com",
+      "org": "Saudi Engineering Group International",
+      "sector": "Construction",
+      "city": "Al Khobar"
+    },
+    {
+      "email": "seloulys@atheer.net.sa",
+      "org": "Al Selouly Agricultural Establishment",
+      "sector": "Industrial Manufacturing",
+      "city": "Riyadh",
+      "flags": [
+        "legacy-domain"
+      ]
+    },
+    {
+      "email": "ses@saudico.com.sa",
+      "org": "saudico.com.sa"
+    },
+    {
+      "email": "sesdam@nournet.com.sa",
+      "org": "nournet.com.sa"
+    },
+    {
+      "email": "setcoho@zajil.net",
+      "org": "Said Ahmed El Ajou Trading Corporation",
+      "sector": "Consumer Goods",
+      "city": "Jeddah"
+    },
+    {
+      "email": "sharq@sharq.sabic.com",
+      "org": "Eastern Petrochemical Company",
+      "sector": "Oil and Gas",
+      "city": "Jubail"
+    },
+    {
+      "email": "shayaisd@nesma.net.sa",
+      "org": "nesma.net.sa",
+      "flags": [
+        "legacy-domain"
+      ]
+    },
+    {
+      "email": "sheraton.makkah@sheraton.com",
+      "org": "Sheraton Makkah Hotel and Towers",
+      "sector": "Travel and Tourism",
+      "city": "Madinah"
+    },
+    {
+      "email": "shifajed@hotmail.com",
+      "org": "hotmail.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "shpgho@unenco-saudi.com",
+      "org": "United Enterprises Company",
+      "sector": "Transport",
+      "city": "Dammam"
+    },
+    {
+      "email": "sicc@prime.net.sa",
+      "org": "Saudi Industrial Contracting Company",
+      "sector": "Construction",
+      "city": "Riyadh"
+    },
+    {
+      "email": "sidco@suhuf.net.sa",
+      "org": "Saudi Industry and Development Company Limit",
+      "sector": "Construction",
+      "city": "Riyadh"
+    },
+    {
+      "email": "siec@siec.com.sa",
+      "org": "siec.com.sa"
+    },
+    {
+      "email": "siporex@lccsiporex.com",
+      "org": "Lightweight Construction Company",
+      "sector": "Construction",
+      "city": "Riyadh"
+    },
+    {
+      "email": "slhh002@motorola.co",
+      "org": "motorola.co"
+    },
+    {
+      "email": "smalkhelaifi@gmail.com",
+      "org": "gmail.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "spcc-abha@sol.net.sa",
+      "org": "Southern Province Cement Company",
+      "sector": "Construction",
+      "city": "Abha",
+      "flags": [
+        "legacy-domain"
+      ]
+    },
+    {
+      "email": "spfl@awalnet.net.sa",
+      "org": "Saudi Plastic Factory",
+      "sector": "Basic Materials",
+      "city": "Riyadh",
+      "flags": [
+        "legacy-domain"
+      ]
+    },
+    {
+      "email": "sscc@arab.net.sa",
+      "org": "Saudi Structures Contracting Company",
+      "sector": "Construction",
+      "city": "Jeddah"
+    },
+    {
+      "email": "sscl-rho@nesma.net.sa",
+      "org": "Saudi Specialist Construction",
+      "sector": "Construction",
+      "city": "Riyadh",
+      "flags": [
+        "legacy-domain"
+      ]
+    },
+    {
+      "email": "ssoc@asg-group.com",
+      "org": "Saudi Services and Operating Company",
+      "sector": "Services",
+      "city": "Riyadh"
+    },
+    {
+      "email": "stc@arab.net.sa",
+      "org": "Saudi Textile Company",
+      "sector": "Consumer Goods",
+      "city": "Jeddah"
+    },
+    {
+      "email": "summit@zajil.net",
+      "org": "zajil.net"
+    },
+    {
+      "email": "support@ipowerweb.com",
+      "org": "ipowerweb.com"
+    },
+    {
+      "email": "support@somac-it.com",
+      "org": "somac-it.com"
+    },
+    {
+      "email": "sure@saudi.net.sa",
+      "org": "saudi.net.sa"
+    },
+    {
+      "email": "swe@zijil.net",
+      "org": "Sanitary Works Establishment",
+      "sector": "Construction",
+      "city": "Jeddah"
+    },
+    {
+      "email": "syed.zafer@sa.abb.co",
+      "org": "sa.abb.co"
+    },
+    {
+      "email": "taifc@yahoo.com",
+      "org": "Taif Investment and Tourism Company",
+      "sector": "Real Estate",
+      "city": "Taif",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "tamimi-ho@al-tamimi.com",
+      "org": "Tamimi Global Company",
+      "sector": "Services",
+      "city": "Jeddah"
+    },
+    {
+      "email": "taqadum@sps.net.sa",
+      "org": "Al Taqadum Trading and Contracting Establishm",
+      "sector": "Construction",
+      "city": "Yanbu",
+      "flags": [
+        "legacy-domain"
+      ]
+    },
+    {
+      "email": "taqwamadinah@interconti.com",
+      "org": "Dar Al Taqwa InterContinental Madinah",
+      "sector": "Travel and Tourism",
+      "city": "Madinah"
+    },
+    {
+      "email": "tariq@barwani.com",
+      "org": "barwani.com"
+    },
+    {
+      "email": "taseco-tms@awalnet.net.sa",
+      "org": "Taseco TMS Saudi Arabia",
+      "sector": "Transport",
+      "city": "Al Khobar",
+      "flags": [
+        "legacy-domain"
+      ]
+    },
+    {
+      "email": "taysam@zajil.net",
+      "org": "Taylorplan Saudi Arabian Markets",
+      "sector": "Services",
+      "city": "Dammam"
+    },
+    {
+      "email": "tifajob@yahoo.com",
+      "org": "yahoo.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "tingdh@gmail.com",
+      "org": "gmail.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "trust@tuwariji.com",
+      "org": "M A Al Tuwaijri Stores",
+      "sector": "Industrial Manufacturing",
+      "city": "Riyadh"
+    },
+    {
+      "email": "turki_d@hotmail.co",
+      "org": "hotmail.co",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "turki@safari.com.sa",
+      "org": "safari.com.sa"
+    },
+    {
+      "email": "tuttimango@sps.net.sa",
+      "org": "sps.net.sa",
+      "flags": [
+        "legacy-domain"
+      ]
+    },
+    {
+      "email": "uaoc@alj.com",
+      "org": "United Outdoor Advertising Company",
+      "sector": "Media",
+      "city": "Jeddah"
+    },
+    {
+      "email": "uasacdam@uasac.com",
+      "org": "United Arab Shipping Agencies",
+      "sector": "Transport",
+      "city": "Jeddah"
+    },
+    {
+      "email": "ufarook@alhokair.com",
+      "org": "alhokair.com"
+    },
+    {
+      "email": "ufc@okam.com.sa",
+      "org": "United Feed Company",
+      "sector": "Agriculture and Food",
+      "city": "Jeddah"
+    },
+    {
+      "email": "uitc2006@yahoo.com",
+      "org": "yahoo.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "v_k_000@yahoo.com",
+      "org": "yahoo.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "vaslhrb@vinnellarabia.com",
+      "org": "vinnellarabia.com"
+    },
+    {
+      "email": "vela@saudiaramco.com.sa",
+      "org": "Vela International Marine"
+    },
+    {
+      "email": "wahabnk@gmail.com",
+      "org": "gmail.com",
+      "flags": [
+        "free-webmail"
+      ]
+    },
+    {
+      "email": "waleed.abuzaid@acec-sa.com",
+      "org": "acec-sa.com"
+    },
+    {
+      "email": "waraq@atheer.net.sa",
+      "org": "Arab Paper Manufacturing Company",
+      "sector": "Basic Materials",
+      "city": "Dammam",
+      "flags": [
+        "legacy-domain"
+      ]
+    },
+    {
+      "email": "webinfo@tadawul.com.sa",
+      "org": "tadawul.com.sa"
+    },
+    {
+      "email": "webmaster@alriyadh-np.com",
+      "org": "Al Yamama Press Establishment",
+      "sector": "Media",
+      "city": "Riyadh"
+    },
+    {
+      "email": "wwd@smi.com.sa",
+      "org": "smi.com.sa"
+    },
+    {
+      "email": "yabdullah@bayanat.co",
+      "org": "bayanat.co"
+    },
+    {
+      "email": "youssef.utc@zajil.net",
+      "org": "zajil.net"
+    },
+    {
+      "email": "yscyanbu@sps.net.sa",
+      "org": "Yanbu Steel Company",
+      "sector": "Mining and Metals",
+      "city": "Yanbu",
+      "flags": [
+        "legacy-domain"
+      ]
+    },
+    {
+      "email": "z.fallatah@alahli.com",
+      "org": "alahli.com"
+    },
+    {
+      "email": "z4ha@zagzoog.com",
+      "org": "zagzoog.com"
+    },
+    {
+      "email": "zomco@zamil-om.com",
+      "org": "zamil-om.com"
+    },
+    {
+      "email": "zoujaj@zoujaj.com",
+      "org": "Dammam Factory for Glass Bottles",
+      "sector": "Basic Materials",
+      "city": "Dammam"
+    }
+  ]
+}

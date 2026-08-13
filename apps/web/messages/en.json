@@ -1,0 +1,483 @@
+{
+  "meta": {
+    "title": "Siyar — Free, unlimited CV analysis for ATS",
+    "shortTitle": "Siyar",
+    "description": "Open-source CV analysis against applicant tracking system (ATS) criteria, in Arabic and English. Completely free, no daily cap, and your file never leaves your device."
+  },
+  "nav": {
+    "brand": "Siyar",
+    "analyze": "Analyze",
+    "outreach": "Outreach",
+    "rubric": "Rubric",
+    "source": "Source",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "home": {
+    "headline": "Your CV is read by a machine before a human ever sees it.",
+    "subhead": "Upload your file and find out exactly what stops an applicant tracking system reading it, and how to fix it. The whole analysis runs inside your browser.",
+    "ctaPrimary": "Upload a file",
+    "ctaSecondary": "Read the rubric",
+    "stats": {
+      "checks": "published checks",
+      "checksNote": "every one written down and arguable",
+      "cost": "to use",
+      "costNote": "no account, no daily limit",
+      "local": "on your device",
+      "localNote": "the file is never uploaded"
+    },
+    "checksTitle": "What gets checked",
+    "weight": "{weight} pts",
+    "badge": "Free and open source · No account",
+    "heroScore": "Score",
+    "checkCount": "{count} checks"
+  },
+  "analyze": {
+    "title": "Analyze your CV",
+    "subtitle": "The file is read and scored inside your browser. It is never uploaded.",
+    "dropzone": {
+      "idle": "Drop your CV here, or click to choose a file",
+      "hint": "PDF or DOCX · up to {limitMb} MB",
+      "active": "Drop it here",
+      "browse": "Choose a file",
+      "sample": "Or try it with an example"
+    },
+    "jobDescription": {
+      "label": "Target job description (optional)",
+      "hint": "Paste a job posting to get a keyword comparison. Leaving it blank does not lower your score — those checks are excluded from the calculation entirely.",
+      "placeholder": "Paste the job you want to apply for…"
+    },
+    "run": "Analyze",
+    "again": "Analyze another file",
+    "analyzing": "Analyzing…",
+    "errors": {
+      "unsupported": "Unsupported format. PDF and DOCX are supported.",
+      "tooLarge": "That file is over the {limitMb} MB limit.",
+      "unreadable": "Could not read that file. It may be corrupt or password-protected."
+    },
+    "result": {
+      "score": "Overall score",
+      "of": "out of 100",
+      "rubricVersion": "Rubric v{version}",
+      "viewRubric": "Read the full rubric",
+      "language": "Document language",
+      "pages": "{count, plural, one {# page} other {# pages}}",
+      "families": "Breakdown by area",
+      "fixes": "What to fix, in order",
+      "noFixes": "Nothing to flag — your CV passed every applicable check.",
+      "notes": "Notes that do not affect your score",
+      "passed": "Checks passed",
+      "skipped": "Checks that did not apply",
+      "skippedHint": "Excluded from the calculation because they do not apply to this file.",
+      "evidence": "From your file",
+      "fix": "How to fix it",
+      "worth": "worth {points} points",
+      "print": "Save report"
+    },
+    "bands": {
+      "good": "Ready to send",
+      "fair": "Needs work",
+      "poor": "Needs significant work"
+    }
+  },
+  "rubric": {
+    "title": "The rubric",
+    "intro": "These are the rules your score is calculated from, in full, with their weights. Every deduction in your report traces back to exactly one of them. If a rule is wrong or a weight is unfair, propose a change in the repository.",
+    "version": "Version",
+    "totalWeight": "Total weight",
+    "bands": "Band thresholds",
+    "points": "pts",
+    "informational": "Informational — no points",
+    "skipNote": "Weights are relative, not percentages: the score is earned points over applicable points. Any check that does not apply to your file — such as the job-description checks when you paste no posting — leaves the denominator entirely and is never counted as a failure.",
+    "outreachSoon": "In progress"
+  },
+  "outreach": {
+    "title": "Send your CV yourself",
+    "intro": "We prepare the message and the recipient list, then open your own inbox with it already written. There is no sending server, no stored password, and nothing goes out on your behalf — you press send, from your account and under your name, and replies come straight back to you.",
+    "steps": {
+      "recipients": "Recipients",
+      "message": "Message",
+      "send": "Send"
+    },
+    "toSend": "Prepare {count} batches",
+    "import": {
+      "idle": "Drop a CSV here",
+      "hint": "Exported from Excel or Google Sheets · only an email column is required",
+      "browse": "Choose a file",
+      "empty": "That file has no rows.",
+      "unreadable": "Could not read that file. Check it is a CSV.",
+      "needEmailColumn": "Pick which column holds the email address.",
+      "mapTitle": "Map the columns",
+      "mapHint": "We guessed from the headers. Check them — a wrong column means mail addressed to a city name.",
+      "noColumn": "None",
+      "preview": "First three rows",
+      "confirm": "Import {count} rows",
+      "cancel": "Cancel",
+      "fields": {
+        "email": "Email",
+        "org": "Organisation",
+        "role": "Role",
+        "name": "Name",
+        "city": "City"
+      },
+      "summaryTitle": "Import summary",
+      "stats": {
+        "ready": "Ready to send",
+        "invalid": "Invalid addresses",
+        "duplicates": "Duplicates",
+        "skipped": "Skipped"
+      },
+      "alreadyContacted": "Skipped {count} address(es) you have already contacted from this browser.",
+      "continue": "Continue with {count} recipients"
+    },
+    "directory": {
+      "title": "The built-in directory",
+      "empty": "It ships empty, deliberately. Every address in it must be one the organisation published itself, carrying a source URL and a verification date — and there is no honest way to fill that with generated addresses. An invented careers@ either bounces or, worse, reaches someone it should not. Entries arrive by pull request with their source, and CI rejects any record without one.",
+      "contribute": "Read the contribution rules"
+    },
+    "compose": {
+      "modeLabel": "How to send",
+      "mode": {
+        "targeted": "Targeted",
+        "batch": "Batched"
+      },
+      "modeHint": {
+        "targeted": "One message per employer, merged with their details. Fewer emails, far more replies.",
+        "batch": "One message to several employers via BCC. Wider coverage, but a lower reply rate — an identical letter is the first thing anyone ignores."
+      },
+      "subject": "Subject",
+      "subjectPlaceholder": "Application — Software Engineer",
+      "body": "Message",
+      "bodyPlaceholder": "Hello,\n\nI am writing to apply to '{{company}}'…",
+      "attachTitle": "You attach the CV yourself.",
+      "attachBody": "mailto has no attachment support at all — the format defines no such field, and every mail client ignores attempts to add one. When the message opens, drag your CV into the compose window before sending."
+    },
+    "guardrails": {
+      "noRecipients": "No recipients yet. Import a file first.",
+      "noSubject": "Give the message a subject — one without is very likely to be filtered.",
+      "noBody": "Write the message.",
+      "dailyCapReached": "You have reached today's limit. Continue tomorrow — heavy sending in one day is what gets an account suspended.",
+      "unresolvedFields": "Some merge fields have no value for some employers. Either fill the missing column in your file or remove the field from the text.",
+      "urlTooLong": "The message is long enough that the link would be truncated mid-address. Shorten it.",
+      "notPersonalised": "The message contains no merge fields, so everyone receives identical text. Allowed, but it is the single biggest reason outreach gets ignored.",
+      "genericCompany": "{count} recipients have no organisation name on record, so their message reads generically (“your company”) instead of naming them. Import a file with an organisation column to address them by name.",
+      "mailAppUnavailable": "The message is longer than a desktop mail app can open (Arabic inflates about fivefold when encoded into a link). The Gmail button and copying both work as normal."
+    },
+    "send": {
+      "capLabel": "Recipients opened today",
+      "capHint": "We count the recipients in batches you opened, not messages actually sent — the message leaves your mail client and we cannot see it. The daily limit is 50, a conservative figure chosen to keep your account out of trouble.",
+      "batch": "Batch of {count}",
+      "opened": "Opened",
+      "urlLength": "Link length",
+      "overBudget": "This batch exceeds what a mail client will accept and the link would be cut off mid-address. Shorten the message.",
+      "openGmail": "Open in Gmail",
+      "openMailApp": "Open in mail app",
+      "copyBcc": "Copy addresses",
+      "copyBody": "Copy message",
+      "copied": "Copied",
+      "showRecipients": "Show recipients",
+      "mailtoTooLong": "Too long for a desktop mail app. Use Gmail, or copy the message."
+    },
+    "paste": {
+      "title": "Add addresses by hand",
+      "hint": "Paste addresses straight in — separated by commas, newlines or semicolons, and it does not matter if names or stray text come with them. We read them and show you what we understood before anything is added.",
+      "placeholder": "careers@example.com\nhr@company.com.sa, jobs@firm.com\nSara Ali sara@firm.com",
+      "found": "{count} addresses",
+      "duplicates": "{count} duplicate",
+      "invalid": "{count} invalid",
+      "add": "Add {count} pasted"
+    },
+    "bundled": {
+      "notLoaded": "This list has not been populated in this build.",
+      "stats": {
+        "total": "Total addresses",
+        "hiring": "Hiring addresses",
+        "cities": "Cities"
+      },
+      "warningTitle": "Read this before using it",
+      "warning": {
+        "unverified": "A third-party list. No entry was verified individually, and it carries no per-record published source the way the curated directory does.",
+        "notHiring": "Most are general contact addresses (info@, sales@, executive offices) rather than recruitment mailboxes, and some belong to named individuals.",
+        "stale": "A large share is old — defunct ISP domains and phone formats that predate 2013.",
+        "bounces": "Expect a high bounce rate, and heavy bouncing damages your own mailbox reputation."
+      },
+      "acknowledge": "Understood, show the list",
+      "unverifiedBadge": "Unverified",
+      "search": "Search address or organisation",
+      "allCities": "All cities",
+      "allSectors": "All sectors",
+      "hiringOnly": "Hiring addresses only ({count})",
+      "showing": "Showing {shown} of {total}",
+      "selectAll": "Select shown",
+      "clear": "Clear",
+      "add": "Add {count} selected",
+      "flags": {
+        "hiring": "hiring",
+        "free-webmail": "free mail",
+        "legacy-domain": "old domain"
+      }
+    },
+    "profile": {
+      "title": "Your details",
+      "hint": "We write a ready message from these, signed in your name. A name and a specialism are enough to start; anything else is added to the message if you fill it in and left out if you do not.",
+      "optional": "optional",
+      "fields": {
+        "name": "Name",
+        "title": "Specialism or job title",
+        "years": "Years of experience",
+        "city": "City",
+        "phone": "Phone",
+        "linkedin": "LinkedIn",
+        "cvUrl": "Link to your CV"
+      },
+      "placeholders": {
+        "name": "Sara Al-Otaibi",
+        "title": "Data Analyst",
+        "years": "7",
+        "city": "Jeddah",
+        "phone": "+966559876543",
+        "linkedin": "linkedin.com/in/username",
+        "cvUrl": "https://drive.google.com/..."
+      },
+      "applyDefault": "Write the message for me",
+      "needNameAndTitle": "Enter a name and specialism first",
+      "storage": "Kept in your browser alone and sent to no server. It disappears if you clear site data."
+    },
+    "template": {
+      "subject": "Application — {title}",
+      "greeting": "Hello,",
+      "intro": "My name is {name} and I work in {title}. I am writing to ask about openings at '{{company}}'.",
+      "experience": "I have {years} years of experience in the field, and I believe what I do well could serve your team.",
+      "attachment": "I have attached my CV to this message.",
+      "cvLink": "You can also view it here: {url}",
+      "closing": "Thank you for your time — I am happy to answer any questions.",
+      "signOff": "Kind regards,",
+      "genericCompany": "your company"
+    }
+  },
+  "families": {
+    "readability": "Machine readability",
+    "structure": "Sections and structure",
+    "contact": "Contact details",
+    "dates": "Dates",
+    "impact": "Achievement writing",
+    "keywords": "Job description match",
+    "hygiene": "Presentation"
+  },
+  "severity": {
+    "critical": "Critical",
+    "major": "Important",
+    "minor": "Minor",
+    "info": "For information"
+  },
+  "checks": {
+    "readability": {
+      "text-layer": {
+        "title": "File contains extractable text",
+        "problem": "Your file contains no text — it is a picture of a CV. Any applicant tracking system will read exactly nothing from it.",
+        "fix": "Export straight to PDF from the program you wrote it in (Word, Google Docs) instead of scanning or photographing a printout."
+      },
+      "single-column": {
+        "title": "Single-column layout",
+        "problem": "We detected a two-column layout on {pages} page(s). It looks fine to you, but a parser reads the columns interleaved and produces scrambled text.",
+        "fix": "Move to a single column running top to bottom. If you want skills to stand out, give them their own section rather than a sidebar."
+      },
+      "margin-content": {
+        "title": "No content in the page margins",
+        "problem": "We found {count} line(s) inside the header or footer band. Many parsers discard those regions entirely.",
+        "fix": "Move anything that matters — especially your email and phone number — into the body of the page."
+      },
+      "embedded-fonts": {
+        "title": "Fonts embedded in the file",
+        "problem": "The file relies on fonts that are not embedded ({fonts}). When they are substituted, Arabic characters can be lost completely.",
+        "fix": "Enable font embedding when exporting to PDF, or use a widely-available font such as IBM Plex Sans Arabic or Noto Naskh Arabic."
+      },
+      "arabic-encoding": {
+        "title": "How the Arabic text is stored",
+        "problem": "Your file stores Arabic as shaped glyphs in reversed visual order. We repaired it to read it here, but an applicant tracking system will not — it will read your CV backwards.",
+        "fix": "Re-export from Word or Google Docs rather than the tool you used. This is a fault in the exporter, not in how you wrote it."
+      },
+      "arabic-ligatures": {
+        "title": "Arabic characters intact in the file",
+        "problem": "The Arabic text inside your file is corrupted: ligatures such as لا and لم are stored transposed, so \"المملكة\" becomes \"اململكة\" and \"الاستجابة\" becomes \"االستجابة\". We found {count} such place(s). The file looks perfect on screen, but every applicant tracking system reads your words misspelled — and a recruiter searching for any of them will never find you.",
+        "fix": "Re-export from Word or Google Docs rather than using the browser's \"Print to PDF\", which is the most common source of this ({producer}). Then re-run the analysis to confirm."
+      },
+      "text-density": {
+        "title": "Enough text on the page",
+        "problem": "There is very little text ({perPage} characters per page). Some of your content is probably inside images or text boxes that cannot be read.",
+        "fix": "Make sure everything is real text — no images, no text boxes, no graphics containing words."
+      }
+    },
+    "structure": {
+      "experience-section": {
+        "title": "Work experience section",
+        "problem": "We could not find a clear work experience heading, or the section is nearly empty ({lines} line(s)).",
+        "fix": "Use an explicit heading such as \"Work Experience\" or \"Professional Experience\", then list each role with employer, title and dates."
+      },
+      "education-section": {
+        "title": "Education section",
+        "problem": "No clear education section was found.",
+        "fix": "Add a heading such as \"Education\" with your degree, institution and year."
+      },
+      "skills-section": {
+        "title": "Skills section",
+        "problem": "There is no dedicated skills section. Many systems index that section alone when searching for a skill.",
+        "fix": "Add a \"Skills\" heading listing your tools and technologies, comma-separated."
+      },
+      "summary-section": {
+        "title": "Summary at the top",
+        "problem": "There is no short professional summary at the top of the CV.",
+        "fix": "Write two or three lines covering your specialism, years of experience and strongest capability."
+      },
+      "heading-coverage": {
+        "title": "Most content sits under a recognised heading",
+        "problem": "Only {covered} of {total} lines fall under a recognised section heading, across {sections} section(s). Everything outside them reaches the parser as unclassified free text.",
+        "fix": "Use conventional headings rather than creative ones, and make sure every block follows one."
+      },
+      "section-order": {
+        "title": "Section order",
+        "problem": "Education comes before experience even though your experience section is substantial.",
+        "fix": "Put work experience above education once you are past your first job."
+      }
+    },
+    "contact": {
+      "email": {
+        "title": "Email address",
+        "problem": "There is no email address on the CV. Nobody can contact you.",
+        "fix": "Add your email near the top as plain text — not inside an image or an icon."
+      },
+      "phone": {
+        "title": "Phone number",
+        "problem": "We could not find a phone number in a readable format.",
+        "fix": "Write it plainly, for example +966 5X XXX XXXX or 05XXXXXXXX."
+      },
+      "location": {
+        "title": "City",
+        "problem": "We could not find your location. Many roles are filtered by it.",
+        "fix": "Add your city and country directly under your name."
+      },
+      "linkedin": {
+        "title": "LinkedIn URL",
+        "problem": "There is no link to your LinkedIn profile.",
+        "fix": "Add the full URL as text, e.g. linkedin.com/in/your-name."
+      },
+      "professional-email": {
+        "title": "Professional email address",
+        "problem": "The address {email} may read as unprofessional.",
+        "fix": "Use one based on your name, such as firstname.lastname@gmail.com."
+      },
+      "personal-details": {
+        "title": "Additional personal details",
+        "problem": "Your CV includes {count} personal detail(s) such as a photo, date of birth or marital status. That is normal and expected locally, but usually best removed when applying outside the region — and a photo in particular can confuse some parsers.",
+        "fix": "Your call, depending on who you are applying to. No points were deducted for this."
+      }
+    },
+    "dates": {
+      "present": {
+        "title": "Clear dates on roles",
+        "problem": "We could not read a single date range. A parser will record your experience as zero years.",
+        "fix": "Give every role a clear range, for example \"Jan 2021 - Present\"."
+      },
+      "reverse-chronological": {
+        "title": "Newest first",
+        "problem": "Roles are not ordered from most recent to oldest.",
+        "fix": "Start with your current or most recent role and work backwards."
+      },
+      "consistent-precision": {
+        "title": "Consistent date precision",
+        "problem": "{withMonths} of {total} ranges give a month while the rest give only a year. Mixing the two makes a parser guess at gaps that may not exist.",
+        "fix": "Pick one: month and year everywhere, or year only everywhere."
+      },
+      "calendar-consistency": {
+        "title": "One calendar throughout",
+        "problem": "The file mixes Hijri and Gregorian dates ({hijri} of {total} ranges are Hijri). A parser will place those roles centuries apart.",
+        "fix": "Use a single calendar throughout — Gregorian is the safer default."
+      },
+      "gaps": {
+        "title": "Employment gaps",
+        "problem": "We found {count} gap(s) of two years or more between roles.",
+        "fix": "Gaps are completely normal — study, travel, family. One short line accounting for it beats leaving a reader to guess."
+      },
+      "current-role": {
+        "title": "Current role marked",
+        "problem": "No role ends in \"Present\", so you read as not currently employed even if you are.",
+        "fix": "If you are still in the role, write \"Present\" instead of an end year."
+      }
+    },
+    "impact": {
+      "uses-bullets": {
+        "title": "Uses bullet points",
+        "problem": "We found {count} bullet(s). Solid paragraphs are harder to skim and harder to parse.",
+        "fix": "Turn each achievement into its own bullet, starting with a verb."
+      },
+      "action-openers": {
+        "title": "Bullets open with a verb",
+        "problem": "{strong} of {total} bullets open with a clear action verb.",
+        "fix": "Start each bullet with a verb such as \"Led\", \"Built\", \"Reduced\" — not with a noun phrase or a pronoun."
+      },
+      "quantified": {
+        "title": "Achievements carry numbers",
+        "problem": "{quantified} of {total} bullets contain a number. Without them every CV reads the same.",
+        "fix": "Attach a measure to each achievement: a percentage, an amount, a user count, time saved. \"Cut response time by 40%\" beats \"improved performance\"."
+      },
+      "no-duty-openers": {
+        "title": "Achievements, not duties",
+        "problem": "{count} of {total} bullets open by describing a duty (\"Responsible for…\") rather than a result.",
+        "fix": "Rewrite \"Responsible for managing the team\" as \"Led a team of 6 and delivered 14 projects\"."
+      },
+      "bullet-length": {
+        "title": "Bullet length",
+        "problem": "{count} of {total} bullets run past {limit} characters. Long bullets do not get read.",
+        "fix": "Keep each bullet to two lines at most. If it contains two ideas, split it."
+      },
+      "first-person": {
+        "title": "Avoid first person",
+        "problem": "{count} of {total} lines use the first person (\"I\", \"my\").",
+        "fix": "Drop the pronoun — \"Built the system\" rather than \"I built the system\". That is the convention on a CV."
+      }
+    },
+    "keywords": {
+      "coverage": {
+        "title": "Job description keyword coverage",
+        "problem": "Your CV covers {covered} of {total} terms from the posting. Missing: {missing}.",
+        "fix": "Add the terms that genuinely apply to you, inside a real achievement. Do not paste them as a bare list — the human who reads it next will notice."
+      },
+      "title-match": {
+        "title": "Job title match",
+        "problem": "The target title \"{title}\" matches {matched} of {total} words against your CV.",
+        "fix": "State a title close to the one advertised in your summary or current role, as long as it is honest."
+      },
+      "skills-section-coverage": {
+        "title": "Required skills in the skills section",
+        "problem": "Only {inSkills} of {covered} matched terms appear inside your skills section. Some systems index that section alone.",
+        "fix": "Repeat your most important technologies in the skills section, even where they already appear in a bullet."
+      }
+    },
+    "hygiene": {
+      "length": {
+        "title": "Page count",
+        "problem": "Your CV is {pages} pages; {allowed} is the right ceiling for your experience.",
+        "fix": "Cut roles older than ten years and detail that does not serve the job you are applying for."
+      },
+      "filename": {
+        "title": "File name",
+        "problem": "The file name \"{fileName}\" is not fit to send — it is the first thing the recipient sees.",
+        "fix": "Name it after yourself and its purpose, e.g. \"sara-alotaibi-cv.pdf\"."
+      },
+      "word-count": {
+        "title": "Amount of content",
+        "problem": "The CV runs to {words} words, outside the sensible range.",
+        "fix": "Aim for 300–800 words. Less will not convince anyone; more will not be read."
+      },
+      "placeholders": {
+        "title": "Template leftovers",
+        "problem": "We found {count} place(s) where template placeholder text was never replaced.",
+        "fix": "Search the file for these and replace them with your own details."
+      }
+    }
+  },
+  "footer": {
+    "privacy": "We do not collect or store your CV. Analysis runs in your browser.",
+    "license": "Open source under AGPL-3.0 — <link>contribute</link>"
+  }
+}

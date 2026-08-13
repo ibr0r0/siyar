@@ -1,0 +1,39 @@
+{
+  "name": "@siyar/web",
+  "version": "0.1.0",
+  "private": true,
+  "license": "AGPL-3.0-only",
+  "type": "module",
+  "scripts": {
+    "predev": "node scripts/copy-pdf-worker.mjs",
+    "dev": "next dev",
+    "prebuild": "node scripts/copy-pdf-worker.mjs && node scripts/check-messages.mjs",
+    "build": "NEXT_DIST_DIR=.next-build next build",
+    "start": "NEXT_DIST_DIR=.next-build next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "check:messages": "node scripts/check-messages.mjs"
+  },
+  "dependencies": {
+    "@siyar/ats-core": "workspace:*",
+    "@siyar/contacts": "workspace:*",
+    "@siyar/parsers": "workspace:*",
+    "clsx": "^2.1.1",
+    "idb-keyval": "^6.2.2",
+    "next": "^15.5.4",
+    "next-intl": "^4.3.12",
+    "pdfjs-dist": "^5.4.149",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "tailwind-merge": "^3.3.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.14",
+    "@types/node": "^24.7.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "tailwindcss": "^4.1.14",
+    "typescript": "^5.9.3",
+    "@formatjs/icu-messageformat-parser": "^2.11.2"
+  }
+}

@@ -1,0 +1,80 @@
+# Licence and rules for the contact data
+
+Everything under `packages/contacts/data/` is available under the
+**Open Database License (ODbL) v1.0** — https://opendatacommons.org/licenses/odbl/1-0/
+
+Share it, adapt it, build on it; attribute Siyar contributors, keep any
+redistributed database under ODbL, and do not use technical measures to restrict
+others' access to it.
+
+The data comes in **two tiers, and they are deliberately not merged.**
+
+---
+
+## Tier 1 — `directory.json` (curated, verified)
+
+The strict tier. A record may be added only if it is an address the
+organisation has **itself published for the purpose of receiving job
+applications** — a `careers@` / `jobs@` / `hr@` address printed on the
+organisation's own careers page or official posting.
+
+Every record must carry:
+
+- `sourceUrl` — the organisation's **own** page where the address appears. CI
+  rejects a source whose host does not match the address domain, so an
+  aggregator or job board is not an acceptable source.
+- `lastVerified` — the date the source was last checked.
+
+Never included in this tier:
+
+- Personal mailboxes of named individuals.
+- Addresses obtained by crawling, scraping, leaks, or purchase.
+- Addresses taken from a third party's paid product.
+
+This tier is what makes the guarantee mean anything. Diluting it would make
+every record in it worthless, which is the whole reason tier 2 exists
+separately.
+
+## Tier 2 — `bundled/*.json` (third-party, unverified)
+
+Compiled lists contributed in bulk. They **cannot** meet the tier 1 standard —
+there is no per-record published source — so they are kept apart, marked
+`"verified": false`, and labelled as unverified everywhere they appear in the
+product.
+
+Each list must carry:
+
+- `provenance` — where the list came from, in plain words, in both languages.
+- `verified: false` — enforced by the schema. There is no way to mark a bundled
+  list verified; a list that earns that belongs in tier 1 instead.
+- `approximateVintage` where known, because stale contact data is the norm and
+  users deserve to know.
+
+Per-entry `flags` warn about what the data actually is:
+
+- `hiring` — the local part names a recruitment mailbox. The only positive signal.
+- `free-webmail` — a Gmail/Hotmail-style address, very often an individual's.
+- `legacy-domain` — a domain belonging to a defunct or consolidated ISP; likely
+  dead, and possibly re-registered by someone unrelated.
+
+**Understand what tier 2 is.** These are, in the main, general company contact
+addresses — `info@`, `sales@`, a managing director's office — not recruitment
+mailboxes. Some belong to named individuals. Writing to them with a job
+application is unsolicited mail to a person who did not ask for it, a large
+share will bounce, and bounces at volume damage the sender's own mailbox
+reputation. The product says so before anyone uses one; contributors and forks
+should not quietly remove that warning.
+
+CI enforces that the two tiers stay disjoint and that no suppressed address
+appears in either.
+
+---
+
+## Removal
+
+Any organisation or individual may have an address removed, from either tier,
+with no questions asked and no justification required. See `REMOVALS.md`.
+
+Removed addresses go to `suppression.json` as SHA-256 hashes, which the sender
+always subtracts and which CI checks both tiers against — so a removal survives
+a later bulk import that happens to contain the same address.

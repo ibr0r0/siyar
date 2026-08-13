@@ -1,0 +1,331 @@
+@import "tailwindcss";
+
+/*
+  Neumorphic (Soft UI) token layer.
+
+  Everything is molded from one surface: there are no borders and no white
+  cards, only light and dark shadows describing whether a thing is raised out of
+  the page or pressed into it. Because that is carried entirely by shadow, the
+  six recipes below are registered as real Tailwind utilities (`shadow-raised`,
+  `shadow-inset-deep`, …) rather than repeated as arbitrary values — one place
+  to tune the physics of the whole product.
+*/
+
+@theme {
+  /* ---- Surface ---------------------------------------------------------- */
+  --color-background: #e0e5ec;
+  --color-foreground: #3d4852; /* 7.38:1 — AAA */
+
+  /*
+    The system specifies #6B7280 for muted text and states it is 4.6:1 on this
+    background. Measured, it is 3.82:1, which fails AA for body text — and muted
+    is the most-used colour in the product. Darkened just enough to clear 4.5:1
+    while holding the same cool grey hue. The same correction is applied to
+    every colour below that carries text.
+  */
+  --color-muted: #606673; /* 4.55:1 — AA */
+  --color-placeholder: #a0aec0; /* 1.78:1 — decorative only, never body text */
+
+  --color-accent: #5146ff; /* 4.52:1 — AA */
+  --color-accent-light: #8b84ff; /* hover/gradient fills only */
+  --color-accent-secondary: #38b2ac; /* 2.04:1 — fills and icons only */
+
+  /*
+    Semantic signals — a deliberate extension to the system.
+
+    The palette ships violet and teal only, but this product's whole job is
+    telling someone how badly something is broken, and severity cannot be
+    encoded in one hue. Each is desaturated to sit calmly on the grey, and each
+    is dark enough to clear WCAG AA as body text on #E0E5EC — measured, not
+    assumed. Severity is never signalled by colour alone; every use is paired
+    with the severity named in words.
+  */
+  --color-danger: #be2e2e; /* 4.58:1 — AA */
+  --color-warning: #935815; /* 4.55:1 — AA */
+  --color-success: #287070; /* 4.55:1 — AA */
+
+  /* ---- Shadow physics --------------------------------------------------- */
+  /*
+    Light source sits top-left, dark falls bottom-right. Both use rgba so they
+    blend into the surface instead of banding against it.
+
+    These are NOT mirrored for right-to-left. A light source does not move when
+    the reading direction changes, and flipping it would make the Arabic and
+    English builds look lit from opposite sides — breaking the illusion that
+    every element is molded from one continuous surface.
+  */
+  --shadow-raised: 9px 9px 16px rgb(163 177 198 / 0.6),
+    -9px -9px 16px rgb(255 255 255 / 0.5);
+  --shadow-raised-hover: 12px 12px 20px rgb(163 177 198 / 0.7),
+    -12px -12px 20px rgb(255 255 255 / 0.6);
+  --shadow-raised-sm: 5px 5px 10px rgb(163 177 198 / 0.6),
+    -5px -5px 10px rgb(255 255 255 / 0.5);
+  --shadow-inset: inset 6px 6px 10px rgb(163 177 198 / 0.6),
+    inset -6px -6px 10px rgb(255 255 255 / 0.5);
+  --shadow-inset-deep: inset 10px 10px 20px rgb(163 177 198 / 0.7),
+    inset -10px -10px 20px rgb(255 255 255 / 0.6);
+  --shadow-inset-sm: inset 3px 3px 6px rgb(163 177 198 / 0.6),
+    inset -3px -3px 6px rgb(255 255 255 / 0.5);
+
+  /* ---- Shape ------------------------------------------------------------ */
+  --radius-card: 2rem; /* 32px — containers */
+  --radius-base: 1rem; /* 16px — buttons, inputs */
+  --radius-inner: 0.75rem; /* 12px — nested elements */
+
+  /* ---- Type ------------------------------------------------------------- */
+  /*
+    Neither Latin face carries Arabic, so the Arabic companion sits directly
+    behind it in the stack and is selected by the browser per glyph. One font
+    stack, no per-locale switching anywhere in the components.
+  */
+  --font-display: var(--font-jakarta), var(--font-alexandria), ui-sans-serif,
+    system-ui, sans-serif;
+  --font-sans: var(--font-dm-sans), var(--font-readex), ui-sans-serif,
+    system-ui, sans-serif;
+
+  /* ---- Motion ----------------------------------------------------------- */
+  --ease-soft: cubic-bezier(0.22, 1, 0.36, 1);
+  --animate-float: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    font-variant-numeric: lining-nums tabular-nums;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /*
+    Arabic sets optically smaller than Latin at the same point size and needs
+    the leading opened up. Tracking must stay at zero — spacing an Arabic face
+    apart severs the joins between letters.
+  */
+  [dir="rtl"] body {
+    font-size: 1.0625rem;
+    line-height: 1.9;
+  }
+
+  [dir="rtl"] .font-display {
+    letter-spacing: 0;
+    line-height: 1.35;
+  }
+
+  ::placeholder {
+    color: var(--color-placeholder);
+  }
+
+  /* Mandatory, visible, and offset in the surface colour so the ring reads as
+     floating above the material rather than cutting into it. */
+  :focus-visible {
+    outline: none;
+    box-shadow:
+      0 0 0 2px var(--color-background),
+      0 0 0 4px var(--color-accent);
+  }
+
+  /* The system leans on motion heavily; honour anyone who has opted out. */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  .font-display {
+    font-family: var(--font-display);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+
+  /* ---- Surfaces --------------------------------------------------------- */
+
+  /* A panel molded out of the page. */
+  .neu-card {
+    background: var(--color-background);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-raised);
+  }
+
+  .neu-card-interactive {
+    transition:
+      box-shadow 300ms var(--ease-soft),
+      transform 300ms var(--ease-soft);
+  }
+
+  .neu-card-interactive:hover {
+    box-shadow: var(--shadow-raised-hover);
+    transform: translateY(-2px);
+  }
+
+  /* A recess carved into the page — inputs, tracks, wells. */
+  .neu-inset {
+    background: var(--color-background);
+    border-radius: var(--radius-base);
+    box-shadow: var(--shadow-inset);
+  }
+
+  .neu-well {
+    background: var(--color-background);
+    border-radius: var(--radius-base);
+    box-shadow: var(--shadow-inset-deep);
+  }
+
+  /* ---- Buttons ---------------------------------------------------------- */
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    /* 44px floor keeps every control a legal touch target. */
+    min-height: 2.75rem;
+    padding: 0.75rem 1.75rem;
+    border-radius: var(--radius-base);
+    font-weight: 600;
+    background: var(--color-background);
+    color: var(--color-foreground);
+    box-shadow: var(--shadow-raised);
+    transition:
+      box-shadow 300ms var(--ease-soft),
+      transform 300ms var(--ease-soft),
+      color 300ms var(--ease-soft);
+  }
+
+  .btn:hover {
+    box-shadow: var(--shadow-raised-hover);
+    transform: translateY(-1px);
+  }
+
+  /* The press is the point: the control sinks into the surface. */
+  .btn:active {
+    box-shadow: var(--shadow-inset-sm);
+    transform: translateY(0.5px);
+  }
+
+  .btn-primary {
+    background: var(--color-accent);
+    color: #fff;
+  }
+
+  .btn-primary:hover {
+    background: var(--color-accent-light);
+  }
+
+  /* On a coloured face the white highlight would read as a smear, so the
+     pressed state is carried by darker/lighter versions of the accent itself. */
+  .btn-primary:active {
+    box-shadow:
+      inset 4px 4px 8px rgb(60 54 160 / 0.5),
+      inset -4px -4px 8px rgb(255 255 255 / 0.25);
+  }
+
+  .btn:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+    box-shadow: var(--shadow-inset-sm);
+  }
+
+  /* Icon-only control: square, 48px, always a legal target. */
+  .btn-icon {
+    padding: 0;
+    width: 3rem;
+    height: 3rem;
+    min-height: 3rem;
+    border-radius: var(--radius-base);
+  }
+
+  /* ---- Inputs ----------------------------------------------------------- */
+
+  .neu-input {
+    width: 100%;
+    background: var(--color-background);
+    color: var(--color-foreground);
+    border-radius: var(--radius-base);
+    padding: 0.9rem 1.15rem;
+    box-shadow: var(--shadow-inset);
+    outline: none;
+    transition: box-shadow 300ms var(--ease-soft);
+  }
+
+  .neu-input:focus {
+    box-shadow:
+      var(--shadow-inset-deep),
+      0 0 0 2px var(--color-background),
+      0 0 0 4px var(--color-accent);
+  }
+
+  /* ---- Meter ------------------------------------------------------------ */
+
+  /* An inset channel with a raised bar riding inside it. */
+  .neu-track {
+    height: 0.75rem;
+    border-radius: 9999px;
+    background: var(--color-background);
+    box-shadow: var(--shadow-inset-sm);
+    overflow: hidden;
+  }
+
+  .neu-track-fill {
+    height: 100%;
+    border-radius: 9999px;
+    box-shadow: var(--shadow-raised-sm);
+    transition: width 600ms var(--ease-soft);
+  }
+
+  /* ---- Pills / labels --------------------------------------------------- */
+
+  .neu-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.4rem 0.9rem;
+    border-radius: 9999px;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    background: var(--color-background);
+    box-shadow: var(--shadow-inset-sm);
+  }
+
+  .label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-muted);
+  }
+
+  [dir="rtl"] .label {
+    letter-spacing: 0;
+    text-transform: none;
+    font-size: 0.8125rem;
+  }
+}
+
+@utility ltr-inline {
+  direction: ltr;
+  unicode-bidi: isolate;
+  display: inline-block;
+}

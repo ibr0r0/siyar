@@ -1,0 +1,25 @@
+node_modules/
+dist/
+.next/
+out/
+coverage/
+*.tsbuildinfo
+
+.env
+.env.local
+.env.*.local
+
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# Copied from pdfjs-dist at build time by scripts/copy-pdf-worker.mjs
+apps/web/public/pdf.worker.min.mjs
+
+# Never commit real CVs — they are personal data.
+apps/web/public/uploads/
+**/fixtures/private/
+
+# Production builds use a separate dist dir so they cannot clobber a running dev server
+apps/web/.next-build/

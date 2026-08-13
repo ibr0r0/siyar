@@ -1,0 +1,25 @@
+{
+  "name": "siyar",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Free, open-source, Arabic-first CV/ATS analyzer and job outreach toolkit",
+  "license": "AGPL-3.0-only",
+  "type": "module",
+  "engines": {
+    "node": ">=20.11"
+  },
+  "packageManager": "pnpm@10.34.5",
+  "scripts": {
+    "dev": "pnpm --filter @siyar/web dev",
+    "build": "pnpm -r build",
+    "start": "pnpm --filter @siyar/web start",
+    "test": "pnpm -r test",
+    "typecheck": "pnpm -r typecheck",
+    "lint": "pnpm -r lint",
+    "validate:contacts": "pnpm --filter @siyar/contacts validate"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.4"
+  }
+}

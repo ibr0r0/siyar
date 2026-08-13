@@ -1,0 +1,281 @@
+{
+  "version": "1.0.0",
+  "note": "The scoring rubric. Every deduction a report shows traces back to exactly one entry here. Weights are relative, not percentages: the score is earned points over applicable points, so checks that skip (because they do not apply to this document) leave the denominator rather than counting as failures. Argue with any of it in a pull request.",
+  "bands": { "good": 80, "fair": 60 },
+  "checks": [
+    {
+      "id": "readability.text-layer",
+      "family": "readability",
+      "severity": "critical",
+      "weight": 12,
+      "appliesTo": "all"
+    },
+    {
+      "id": "readability.single-column",
+      "family": "readability",
+      "severity": "critical",
+      "weight": 8,
+      "appliesTo": "all"
+    },
+    {
+      "id": "readability.margin-content",
+      "family": "readability",
+      "severity": "major",
+      "weight": 3,
+      "appliesTo": "all"
+    },
+    {
+      "id": "readability.embedded-fonts",
+      "family": "readability",
+      "severity": "major",
+      "weight": 3,
+      "appliesTo": "all"
+    },
+    {
+      "id": "readability.arabic-encoding",
+      "family": "readability",
+      "severity": "info",
+      "weight": 0,
+      "appliesTo": ["ar", "mixed"],
+      "informational": true
+    },
+    {
+      "id": "readability.arabic-ligatures",
+      "family": "readability",
+      "severity": "critical",
+      "weight": 8,
+      "appliesTo": ["ar", "mixed"]
+    },
+    {
+      "id": "readability.text-density",
+      "family": "readability",
+      "severity": "major",
+      "weight": 4,
+      "appliesTo": "all"
+    },
+
+    {
+      "id": "structure.experience-section",
+      "family": "structure",
+      "severity": "major",
+      "weight": 6,
+      "appliesTo": "all"
+    },
+    {
+      "id": "structure.education-section",
+      "family": "structure",
+      "severity": "major",
+      "weight": 4,
+      "appliesTo": "all"
+    },
+    {
+      "id": "structure.skills-section",
+      "family": "structure",
+      "severity": "major",
+      "weight": 4,
+      "appliesTo": "all"
+    },
+    {
+      "id": "structure.summary-section",
+      "family": "structure",
+      "severity": "minor",
+      "weight": 2,
+      "appliesTo": "all"
+    },
+    {
+      "id": "structure.heading-coverage",
+      "family": "structure",
+      "severity": "major",
+      "weight": 3,
+      "appliesTo": "all"
+    },
+    {
+      "id": "structure.section-order",
+      "family": "structure",
+      "severity": "minor",
+      "weight": 1,
+      "appliesTo": "all"
+    },
+
+    {
+      "id": "contact.email",
+      "family": "contact",
+      "severity": "critical",
+      "weight": 8,
+      "appliesTo": "all"
+    },
+    {
+      "id": "contact.phone",
+      "family": "contact",
+      "severity": "major",
+      "weight": 5,
+      "appliesTo": "all"
+    },
+    {
+      "id": "contact.location",
+      "family": "contact",
+      "severity": "minor",
+      "weight": 2,
+      "appliesTo": "all"
+    },
+    {
+      "id": "contact.linkedin",
+      "family": "contact",
+      "severity": "minor",
+      "weight": 1,
+      "appliesTo": "all"
+    },
+    {
+      "id": "contact.professional-email",
+      "family": "contact",
+      "severity": "minor",
+      "weight": 2,
+      "appliesTo": "all"
+    },
+    {
+      "id": "contact.personal-details",
+      "family": "contact",
+      "severity": "info",
+      "weight": 0,
+      "appliesTo": "all",
+      "informational": true
+    },
+
+    {
+      "id": "dates.present",
+      "family": "dates",
+      "severity": "major",
+      "weight": 5,
+      "appliesTo": "all"
+    },
+    {
+      "id": "dates.reverse-chronological",
+      "family": "dates",
+      "severity": "minor",
+      "weight": 2,
+      "appliesTo": "all"
+    },
+    {
+      "id": "dates.consistent-precision",
+      "family": "dates",
+      "severity": "minor",
+      "weight": 2,
+      "appliesTo": "all"
+    },
+    {
+      "id": "dates.calendar-consistency",
+      "family": "dates",
+      "severity": "major",
+      "weight": 1,
+      "appliesTo": "all"
+    },
+    {
+      "id": "dates.gaps",
+      "family": "dates",
+      "severity": "info",
+      "weight": 1,
+      "appliesTo": "all"
+    },
+    {
+      "id": "dates.current-role",
+      "family": "dates",
+      "severity": "minor",
+      "weight": 1,
+      "appliesTo": "all"
+    },
+
+    {
+      "id": "impact.uses-bullets",
+      "family": "impact",
+      "severity": "major",
+      "weight": 3,
+      "appliesTo": "all"
+    },
+    {
+      "id": "impact.action-openers",
+      "family": "impact",
+      "severity": "minor",
+      "weight": 4,
+      "appliesTo": "all"
+    },
+    {
+      "id": "impact.quantified",
+      "family": "impact",
+      "severity": "minor",
+      "weight": 4,
+      "appliesTo": "all"
+    },
+    {
+      "id": "impact.no-duty-openers",
+      "family": "impact",
+      "severity": "minor",
+      "weight": 2,
+      "appliesTo": "all"
+    },
+    {
+      "id": "impact.bullet-length",
+      "family": "impact",
+      "severity": "minor",
+      "weight": 1,
+      "appliesTo": "all"
+    },
+    {
+      "id": "impact.first-person",
+      "family": "impact",
+      "severity": "minor",
+      "weight": 1,
+      "appliesTo": "all"
+    },
+
+    {
+      "id": "keywords.coverage",
+      "family": "keywords",
+      "severity": "major",
+      "weight": 12,
+      "appliesTo": "all"
+    },
+    {
+      "id": "keywords.title-match",
+      "family": "keywords",
+      "severity": "major",
+      "weight": 5,
+      "appliesTo": "all"
+    },
+    {
+      "id": "keywords.skills-section-coverage",
+      "family": "keywords",
+      "severity": "minor",
+      "weight": 3,
+      "appliesTo": "all"
+    },
+
+    {
+      "id": "hygiene.length",
+      "family": "hygiene",
+      "severity": "minor",
+      "weight": 3,
+      "appliesTo": "all"
+    },
+    {
+      "id": "hygiene.filename",
+      "family": "hygiene",
+      "severity": "minor",
+      "weight": 2,
+      "appliesTo": "all"
+    },
+    {
+      "id": "hygiene.word-count",
+      "family": "hygiene",
+      "severity": "major",
+      "weight": 2,
+      "appliesTo": "all"
+    },
+    {
+      "id": "hygiene.placeholders",
+      "family": "hygiene",
+      "severity": "major",
+      "weight": 1,
+      "appliesTo": "all"
+    }
+  ]
+}
