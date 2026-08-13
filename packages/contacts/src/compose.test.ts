@@ -8,7 +8,7 @@ import {
   renderTemplate,
   usesMergeFields,
 } from "./compose";
-import { checkReadiness, todayKey } from "./guardrails";
+import { checkReadiness } from "./guardrails";
 import { hashEmail, removeSuppressed } from "./suppression";
 import { guessMapping, isValidEmail, parseCsv, toSheet } from "./csv";
 
@@ -239,26 +239,23 @@ describe("guardrails", () => {
     body: "Hello",
     template: "Hello {{company}}",
     recipientCount: 10,
-    sentToday: 0,
     unresolved: [],
     overBudgetBatches: 0,
   };
 
   it("passes a well-formed batch", () => {
-    const result = checkReadiness(base);
-    expect(result.ok).toBe(true);
-    expect(result.remainingToday).toBe(50);
+    expect(checkReadiness(base).ok).toBe(true);
+  });
+
+  it("imposes no volume cap", () => {
+    // Deliberate: the daily limit was removed at the project owner's request.
+    // Dedupe against already-contacted addresses is a separate guardrail.
+    expect(checkReadiness({ ...base, recipientCount: 5000 }).ok).toBe(true);
   });
 
   it("blocks an empty subject or body", () => {
     expect(checkReadiness({ ...base, subject: " " }).blockers).toContain("noSubject");
     expect(checkReadiness({ ...base, body: "" }).blockers).toContain("noBody");
-  });
-
-  it("blocks once the daily cap is spent", () => {
-    const result = checkReadiness({ ...base, sentToday: 50 });
-    expect(result.blockers).toContain("dailyCapReached");
-    expect(result.remainingToday).toBe(0);
   });
 
   it("blocks only when no transport can carry the message", () => {
@@ -304,9 +301,5 @@ describe("guardrails", () => {
     const result = checkReadiness({ ...base, template: "Hello everyone" });
     expect(result.warnings).toContain("notPersonalised");
     expect(result.ok).toBe(true);
-  });
-
-  it("keys the daily counter to the local day", () => {
-    expect(todayKey(new Date(2026, 7, 13))).toBe("2026-08-13");
   });
 });

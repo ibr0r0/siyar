@@ -6,14 +6,13 @@ import {
   checkReadiness,
   chunkRecipients,
   mailtoBudgetFor,
-  DEFAULT_DAILY_CAP,
   renderTemplate,
   removeSuppressed,
   suppression,
   type SenderProfile,
   type SendMode,
 } from "@siyar/contacts";
-import { alreadyContacted, openedToday, recordOpened } from "@/lib/outreach";
+import { alreadyContacted, recordOpened } from "@/lib/outreach";
 import { buildDefaultTemplate } from "@/lib/default-template";
 import { EMPTY_PROFILE, loadProfile, saveProfile } from "@/lib/profile";
 import { DEFAULT_PLATFORM, detectPlatform, type Platform } from "@/lib/platform";
@@ -44,12 +43,10 @@ export function Outreach() {
   const [body, setBody] = useState("");
 
   const [opened, setOpened] = useState<Set<number>>(new Set());
-  const [sentToday, setSentToday] = useState(0);
   const [profile, setProfile] = useState<SenderProfile>(EMPTY_PROFILE);
   const [platform, setPlatform] = useState<Platform>(DEFAULT_PLATFORM);
 
   useEffect(() => {
-    setSentToday(openedToday());
     setProfile(loadProfile());
     setPlatform(detectPlatform());
   }, []);
@@ -201,7 +198,6 @@ export function Outreach() {
     body,
     template: body,
     recipientCount: recipients.length,
-    sentToday,
     unresolved,
     overBudgetBatches: batches.filter((batch) => batch.overBudget).length,
     mailtoOverBudgetBatches: batches.filter((batch) => batch.mailtoOverBudget)
@@ -211,7 +207,6 @@ export function Outreach() {
 
   function handleOpen(index: number, batchRecipients: string[]) {
     recordOpened(batchRecipients);
-    setSentToday(openedToday());
     setOpened((current) => new Set(current).add(index));
   }
 
@@ -352,30 +347,6 @@ export function Outreach() {
 
       {step === "send" && (
         <section className="space-y-8">
-          <div className="neu-card p-8">
-            <div className="flex flex-wrap items-baseline justify-between gap-4">
-              <p className="label">{t("send.capLabel")}</p>
-              <p className="font-display text-lg text-foreground">
-                {format.number(sentToday)} / {format.number(DEFAULT_DAILY_CAP)}
-              </p>
-            </div>
-            <div className="neu-track mt-3">
-              <div
-                className="neu-track-fill"
-                style={{
-                  width: `${Math.min(100, (sentToday / DEFAULT_DAILY_CAP) * 100)}%`,
-                  background:
-                    sentToday >= DEFAULT_DAILY_CAP
-                      ? "var(--color-danger)"
-                      : "var(--color-accent)",
-                }}
-              />
-            </div>
-            <p className="mt-4 text-sm leading-relaxed text-muted">
-              {t("send.capHint")}
-            </p>
-          </div>
-
           <BatchList
             batches={batches}
             subject={subject}

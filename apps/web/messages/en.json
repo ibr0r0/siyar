@@ -156,7 +156,6 @@
       "noRecipients": "No recipients yet. Import a file first.",
       "noSubject": "Give the message a subject — one without is very likely to be filtered.",
       "noBody": "Write the message.",
-      "dailyCapReached": "You have reached today's limit. Continue tomorrow — heavy sending in one day is what gets an account suspended.",
       "unresolvedFields": "Some merge fields have no value for some employers. Either fill the missing column in your file or remove the field from the text.",
       "urlTooLong": "The message is long enough that the link would be truncated mid-address. Shorten it.",
       "notPersonalised": "The message contains no merge fields, so everyone receives identical text. Allowed, but it is the single biggest reason outreach gets ignored.",
@@ -164,8 +163,6 @@
       "mailAppUnavailable": "The message is longer than a desktop mail app can open (Arabic inflates about fivefold when encoded into a link). The Gmail button and copying both work as normal."
     },
     "send": {
-      "capLabel": "Recipients opened today",
-      "capHint": "We count the recipients in batches you opened, not messages actually sent — the message leaves your mail client and we cannot see it. The daily limit is 50, a conservative figure chosen to keep your account out of trouble.",
       "batch": "Batch of {count}",
       "opened": "Opened",
       "urlLength": "Link length",

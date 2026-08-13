@@ -69,8 +69,6 @@ export { hashEmail, hashEmails, removeSuppressed } from "./suppression";
 
 export {
   checkReadiness,
-  DEFAULT_DAILY_CAP,
-  todayKey,
   type BlockerCode,
   type Readiness,
   type ReadinessInput,

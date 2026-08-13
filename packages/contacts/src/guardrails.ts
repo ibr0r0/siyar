@@ -1,17 +1,18 @@
 import { usesMergeFields } from "./compose";
 
 /**
- * What stops this from being a mass-mailer.
+ * Checks run before a batch can be opened.
  *
- * The `mailto:` design already removes most of the risk — nothing leaves the
- * machine without the user personally pressing send in their own client. These
- * are the remaining checks, and they exist for the user's benefit as much as
- * the recipients': a mailbox provider that sees five hundred identical BCC'd
- * messages in an afternoon suspends the account sending them.
+ * The `mailto:` design carries most of the safety by itself — nothing leaves
+ * the machine without the user personally pressing send in their own client.
+ * What remains here is about the message being fit to send: addressed to
+ * someone, with a subject and a body, and short enough for a transport that
+ * can carry it.
+ *
+ * There is no volume cap. One was removed at the project owner's request; the
+ * dedupe against already-contacted addresses is a separate guardrail and still
+ * applies, so the same employer is not written to twice.
  */
-
-/** Conservative enough to keep a personal mailbox out of trouble. */
-export const DEFAULT_DAILY_CAP = 50;
 
 export type SendMode = "targeted" | "batch";
 
@@ -21,9 +22,6 @@ export interface ReadinessInput {
   body: string;
   template: string;
   recipientCount: number;
-  /** How many this mailbox has already been given today. */
-  sentToday: number;
-  dailyCap?: number;
   /** Placeholders left unfilled after merging. */
   unresolved: string[];
   /** Batches too long for every transport, including Gmail. Blocking. */
@@ -44,7 +42,6 @@ export type BlockerCode =
   | "noRecipients"
   | "noSubject"
   | "noBody"
-  | "dailyCapReached"
   | "unresolvedFields"
   | "urlTooLong"
   | "notPersonalised"
@@ -55,20 +52,15 @@ export interface Readiness {
   ok: boolean;
   blockers: BlockerCode[];
   warnings: BlockerCode[];
-  remainingToday: number;
 }
 
 export function checkReadiness(input: ReadinessInput): Readiness {
-  const cap = input.dailyCap ?? DEFAULT_DAILY_CAP;
-  const remainingToday = Math.max(0, cap - input.sentToday);
-
   const blockers: BlockerCode[] = [];
   const warnings: BlockerCode[] = [];
 
   if (input.recipientCount === 0) blockers.push("noRecipients");
   if (input.subject.trim().length === 0) blockers.push("noSubject");
   if (input.body.trim().length === 0) blockers.push("noBody");
-  if (remainingToday === 0) blockers.push("dailyCapReached");
   if (input.overBudgetBatches > 0) blockers.push("urlTooLong");
 
   // Only the mail-app button is unusable here. Blocking the send would refuse
@@ -98,13 +90,6 @@ export function checkReadiness(input: ReadinessInput): Readiness {
   // recipients — but they should know how many will read as generic.
   if ((input.genericCompanyCount ?? 0) > 0) warnings.push("genericCompany");
 
-  return { ok: blockers.length === 0, blockers, warnings, remainingToday };
+  return { ok: blockers.length === 0, blockers, warnings };
 }
 
-/** Local-day key for the send counter, so the cap resets at midnight. */
-export function todayKey(now: Date): string {
-  const year = now.getFullYear();
-  const month = `${now.getMonth() + 1}`.padStart(2, "0");
-  const day = `${now.getDate()}`.padStart(2, "0");
-  return `${year}-${month}-${day}`;
-}
