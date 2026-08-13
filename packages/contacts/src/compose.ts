@@ -26,14 +26,35 @@ export interface ComposeInput {
 export const MAILTO_SUPPORTS_ATTACHMENTS = false;
 
 /**
- * Conservative ceiling for a `mailto:` URL.
+ * Ceiling for a `mailto:` URL on Windows.
  *
  * The binding constraint is not the browser but the OS protocol handler:
  * Windows caps the command line it hands to the mail client at roughly 2048
  * characters, and anything past that is truncated — silently, mid-address.
  * 1800 leaves room for the client's own wrapper.
  */
-export const MAILTO_URL_BUDGET = 1800;
+export const MAILTO_URL_BUDGET_WINDOWS = 1800;
+
+/**
+ * Ceiling elsewhere — macOS, Linux, Android, iOS.
+ *
+ * None of them route `mailto:` through a Windows-style command line, so the
+ * 1800 figure does not apply to them. Applying it everywhere was a real bug:
+ * it disabled the mail-app button for ordinary Arabic messages on phones,
+ * where `mailto:` is the *only* thing that opens the installed mail app, and
+ * left the user with two buttons that both did nothing.
+ *
+ * Still bounded rather than unlimited: handlers do have limits, they are just
+ * not documented, and a truncated address is worse than a refused one.
+ */
+export const MAILTO_URL_BUDGET_DEFAULT = 8000;
+
+/** Kept as the conservative default for callers that do not know the platform. */
+export const MAILTO_URL_BUDGET = MAILTO_URL_BUDGET_WINDOWS;
+
+export function mailtoBudgetFor(isWindows: boolean): number {
+  return isWindows ? MAILTO_URL_BUDGET_WINDOWS : MAILTO_URL_BUDGET_DEFAULT;
+}
 
 /** Gmail's web compose is a normal URL, so the ceiling is the browser's. */
 export const GMAIL_URL_BUDGET = 8000;
@@ -147,6 +168,12 @@ export interface ChunkOptions {
   urlBudget?: number;
   /** Which URL shape to measure — the two have very different ceilings. */
   target?: "mailto" | "gmail";
+  /**
+   * The `mailto:` ceiling to judge against. Defaults to the Windows figure,
+   * which is the strictest, so a caller that does not know the platform is
+   * never told a message will fit when it might not.
+   */
+  mailtoBudget?: number;
 }
 
 /**
@@ -165,11 +192,15 @@ export function chunkRecipients(
   const build = target === "gmail" ? buildGmailUrl : buildMailtoUrl;
   const budget =
     options.urlBudget ??
-    (target === "gmail" ? GMAIL_URL_BUDGET : MAILTO_URL_BUDGET);
+    (target === "gmail"
+      ? GMAIL_URL_BUDGET
+      : (options.mailtoBudget ?? MAILTO_URL_BUDGET_WINDOWS));
   const maxPerBatch = options.maxPerBatch ?? 25;
 
   const batches: Batch[] = [];
   let current: string[] = [];
+
+  const mailtoCeiling = options.mailtoBudget ?? MAILTO_URL_BUDGET_WINDOWS;
 
   const finalise = () => {
     if (current.length === 0) return;
@@ -182,7 +213,7 @@ export function chunkRecipients(
       url: mailto,
       length: mailto.length,
       gmailLength: gmail.length,
-      mailtoOverBudget: mailto.length > MAILTO_URL_BUDGET,
+      mailtoOverBudget: mailto.length > mailtoCeiling,
       overBudget: gmail.length > GMAIL_URL_BUDGET,
     });
     current = [];

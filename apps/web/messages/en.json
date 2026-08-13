@@ -176,7 +176,8 @@
       "copyBody": "Copy message",
       "copied": "Copied",
       "showRecipients": "Show recipients",
-      "mailtoTooLong": "Too long for a desktop mail app. Use Gmail, or copy the message."
+      "mailtoTooLong": "Too long for a desktop mail app. Use Gmail, or copy the message.",
+      "openGmailWeb": "Gmail (browser)"
     },
     "paste": {
       "title": "Add addresses by hand",

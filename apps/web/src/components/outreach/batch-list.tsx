@@ -1,15 +1,16 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useFormatter, useTranslations } from "next-intl";
 import {
   buildGmailUrl,
   buildMailtoUrl,
   GMAIL_URL_BUDGET,
-  MAILTO_URL_BUDGET,
+  mailtoBudgetFor,
   type Batch,
 } from "@siyar/contacts";
 import { cn } from "@/lib/cn";
+import { DEFAULT_PLATFORM, detectPlatform, type Platform } from "@/lib/platform";
 
 interface Props {
   batches: Batch[];
@@ -23,6 +24,13 @@ export function BatchList({ batches, subject, body, opened, onOpen }: Props) {
   const t = useTranslations("outreach.send");
   const format = useFormatter();
   const [copied, setCopied] = useState<string | null>(null);
+
+  // Detected after mount so the server-rendered markup stays identical for
+  // every visitor; the buttons reorder once, before anyone can click.
+  const [platform, setPlatform] = useState<Platform>(DEFAULT_PLATFORM);
+  useEffect(() => setPlatform(detectPlatform()), []);
+
+  const mailtoCeiling = mailtoBudgetFor(platform.isWindows);
 
   async function copy(text: string, token: string) {
     try {
@@ -38,10 +46,12 @@ export function BatchList({ batches, subject, body, opened, onOpen }: Props) {
     <ul className="space-y-6">
       {batches.map((batch, index) => {
         const isOpen = opened.has(index);
-        const overMailto = batch.mailtoOverBudget;
+        // Re-judged against this platform's ceiling rather than the value baked
+        // in when the batches were built, which assumes the strictest case.
+        const overMailto = batch.length > mailtoCeiling;
         // Once mailto is out of the picture, showing its ceiling is misleading;
         // measure against the transport that will actually be used.
-        const ceiling = overMailto ? GMAIL_URL_BUDGET : MAILTO_URL_BUDGET;
+        const ceiling = overMailto ? GMAIL_URL_BUDGET : mailtoCeiling;
         const measured = overMailto ? batch.gmailLength : batch.length;
         const usage = Math.min(100, (measured / ceiling) * 100);
         const gmailUrl = buildGmailUrl({
@@ -111,7 +121,7 @@ export function BatchList({ batches, subject, body, opened, onOpen }: Props) {
               >
                 {t("overBudget")}
               </p>
-            ) : batch.mailtoOverBudget ? (
+            ) : overMailto ? (
               /* Only the mail-app route is closed. Say which one and why,
                  rather than greying out a button with no explanation. */
               <p className="neu-inset mt-4 rounded-2xl p-4 text-sm text-[color:var(--color-warning)]">
@@ -120,25 +130,34 @@ export function BatchList({ batches, subject, body, opened, onOpen }: Props) {
             ) : null}
 
             <div className="mt-6 flex flex-wrap gap-3">
+              {/*
+                Order matters. On a phone the Gmail web URL opens a browser tab,
+                not the Gmail app — only `mailto:` reaches an installed mail
+                app — so the mail-app button leads there and Gmail is offered as
+                the web alternative.
+              */}
+              <a
+                href={mailtoUrl}
+                onClick={() => onOpen(index, batch.recipients)}
+                className={cn(
+                  platform.isMobile ? "btn btn-primary text-sm" : "btn text-sm",
+                  (batch.overBudget || overMailto) &&
+                    "pointer-events-none opacity-50",
+                )}
+              >
+                {t("openMailApp")}
+              </a>
               <a
                 href={gmailUrl}
                 target="_blank"
                 rel="noreferrer noopener"
                 onClick={() => onOpen(index, batch.recipients)}
-                className={cn("btn btn-primary text-sm", batch.overBudget && "pointer-events-none opacity-50")}
-              >
-                {t("openGmail")}
-              </a>
-              <a
-                href={mailtoUrl}
-                onClick={() => onOpen(index, batch.recipients)}
                 className={cn(
-                  "btn text-sm",
-                  (batch.overBudget || batch.mailtoOverBudget) &&
-                    "pointer-events-none opacity-50",
+                  platform.isMobile ? "btn text-sm" : "btn btn-primary text-sm",
+                  batch.overBudget && "pointer-events-none opacity-50",
                 )}
               >
-                {t("openMailApp")}
+                {platform.isMobile ? t("openGmailWeb") : t("openGmail")}
               </a>
 
               {/* Always available: if both handlers fail — no default client,

@@ -5,6 +5,7 @@ import { useFormatter, useTranslations } from "next-intl";
 import {
   checkReadiness,
   chunkRecipients,
+  mailtoBudgetFor,
   DEFAULT_DAILY_CAP,
   renderTemplate,
   removeSuppressed,
@@ -15,6 +16,7 @@ import {
 import { alreadyContacted, openedToday, recordOpened } from "@/lib/outreach";
 import { buildDefaultTemplate } from "@/lib/default-template";
 import { EMPTY_PROFILE, loadProfile, saveProfile } from "@/lib/profile";
+import { DEFAULT_PLATFORM, detectPlatform, type Platform } from "@/lib/platform";
 import { cn } from "@/lib/cn";
 import { BatchList } from "./batch-list";
 import { MessageComposer } from "./message-composer";
@@ -44,11 +46,16 @@ export function Outreach() {
   const [opened, setOpened] = useState<Set<number>>(new Set());
   const [sentToday, setSentToday] = useState(0);
   const [profile, setProfile] = useState<SenderProfile>(EMPTY_PROFILE);
+  const [platform, setPlatform] = useState<Platform>(DEFAULT_PLATFORM);
 
   useEffect(() => {
     setSentToday(openedToday());
     setProfile(loadProfile());
+    setPlatform(detectPlatform());
   }, []);
+
+  // Only Windows routes mailto through a length-capped command line.
+  const mailtoBudget = mailtoBudgetFor(platform.isWindows);
 
   function updateProfile(next: SenderProfile) {
     setProfile(next);
@@ -169,6 +176,7 @@ export function Outreach() {
           subject: renderedSubject.text,
           body: rendered.text,
           maxPerBatch: 1,
+          mailtoBudget,
         });
       });
       return { batches: result, unresolved: [...missing], genericCompanyCount: generic };
@@ -180,12 +188,12 @@ export function Outreach() {
     return {
       batches: chunkRecipients(
         recipients.map((entry) => entry.email),
-        { subject, body: rendered.text, maxPerBatch: 25 },
+        { subject, body: rendered.text, maxPerBatch: 25, mailtoBudget },
       ),
       unresolved: rendered.unresolved,
       genericCompanyCount: 0,
     };
-  }, [recipients, mode, subject, body, tpl]);
+  }, [recipients, mode, subject, body, tpl, mailtoBudget]);
 
   const readiness = checkReadiness({
     mode,
