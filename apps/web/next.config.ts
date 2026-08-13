@@ -5,11 +5,15 @@ const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 
 const nextConfig: NextConfig = {
   /*
-    A production build must not share a directory with a running dev server.
-    They write incompatible chunk graphs to the same place, and the loser dies
-    with `__webpack_modules__[moduleId] is not a function` or a missing
-    vendor chunk — an error that looks like a code fault and is not one.
-    `pnpm build` sets NEXT_DIST_DIR so the two can coexist.
+    Defaults to `.next`, which is what Vercel, every other host, and every
+    contributor expects — a build that writes somewhere else fails deployment
+    with "output directory not found" even though it compiled perfectly.
+
+    `NEXT_DIST_DIR` is an opt-in escape hatch for one local situation: building
+    while a dev server is running. They otherwise write incompatible chunk
+    graphs to the same directory and the loser dies with
+    `__webpack_modules__[moduleId] is not a function`, which reads like a code
+    fault and is not one. Use `pnpm build:isolated` for that.
   */
   distDir: process.env.NEXT_DIST_DIR ?? ".next",
 

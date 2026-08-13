@@ -8,11 +8,12 @@
     "predev": "node scripts/copy-pdf-worker.mjs",
     "dev": "next dev",
     "prebuild": "node scripts/copy-pdf-worker.mjs && node scripts/check-messages.mjs",
-    "build": "NEXT_DIST_DIR=.next-build next build",
-    "start": "NEXT_DIST_DIR=.next-build next start",
+    "build": "next build",
+    "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
-    "check:messages": "node scripts/check-messages.mjs"
+    "check:messages": "node scripts/check-messages.mjs",
+    "build:isolated": "NEXT_DIST_DIR=.next-build pnpm build"
   },
   "dependencies": {
     "@siyar/ats-core": "workspace:*",

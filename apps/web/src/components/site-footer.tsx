@@ -12,7 +12,7 @@ export function SiteFooter() {
             link: (chunks) => (
               <a
                 className="font-semibold text-accent underline-offset-4 hover:underline"
-                href="https://github.com/siyar-app/siyar"
+                href="https://github.com/ibr0r0/siyar"
                 target="_blank"
                 rel="noreferrer noopener"
               >

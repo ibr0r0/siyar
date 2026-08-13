@@ -301,7 +301,7 @@ export function Outreach() {
               {t("directory.empty")}
             </p>
             <a
-              href="https://github.com/siyar-app/siyar/blob/main/packages/contacts/data/LICENSE"
+              href="https://github.com/ibr0r0/siyar/blob/main/packages/contacts/data/LICENSE"
               target="_blank"
               rel="noreferrer noopener"
               className="btn mt-6 text-sm"

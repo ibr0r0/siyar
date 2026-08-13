@@ -54,7 +54,7 @@ export function SiteHeader() {
           <LocaleSwitcher />
 
           <a
-            href="https://github.com/siyar-app/siyar"
+            href="https://github.com/ibr0r0/siyar"
             target="_blank"
             rel="noreferrer noopener"
             className="btn hidden text-sm md:inline-flex"
@@ -100,7 +100,7 @@ export function SiteHeader() {
             ))}
             <li>
               <a
-                href="https://github.com/siyar-app/siyar"
+                href="https://github.com/ibr0r0/siyar"
                 target="_blank"
                 rel="noreferrer noopener"
                 className="block rounded-2xl px-4 py-3 font-medium text-muted"
